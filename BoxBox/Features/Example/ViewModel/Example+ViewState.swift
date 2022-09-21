@@ -8,13 +8,9 @@
 import Foundation
 
 extension ExampleRootView.ViewModel {
-    enum ViewState: Equatable, Hashable {
+    enum ViewState {
         case loading
         case loaded(Driver)
-    }
-
-    struct Driver: Equatable, Hashable {
-        let name: String
-        let points: Int
+        case error
     }
 }

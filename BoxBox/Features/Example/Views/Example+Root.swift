@@ -23,6 +23,8 @@ struct ExampleRootView: View {
                 loadingView()
             case let .loaded(driver):
                 loadedView(driver: driver)
+            case .error:
+                loadingView()
         }
     }
 
@@ -31,11 +33,11 @@ struct ExampleRootView: View {
             .padding()
     }
 
-    func loadedView(driver: ExampleRootView.ViewModel.Driver) -> some View {
+    func loadedView(driver: Driver) -> some View {
         VStack {
-            Text("Hello, world!")
-            Text(driver.name)
-            Text("\(driver.points)")
+            Text(driver.code)
+            Text(driver.givenName)
+            Text(driver.familyName)
             Button {
                 Task {
                     await viewModel.changeDriver()

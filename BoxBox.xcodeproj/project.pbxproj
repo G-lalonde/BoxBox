@@ -18,6 +18,12 @@
 		C2A38BDE28DB759E00D8C0F1 /* Example+Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BDD28DB759E00D8C0F1 /* Example+Root.swift */; };
 		C2A38BE028DB75D200D8C0F1 /* Example+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BDF28DB75D200D8C0F1 /* Example+ViewModel.swift */; };
 		C2A38BE228DB772A00D8C0F1 /* Example+ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BE128DB772A00D8C0F1 /* Example+ViewState.swift */; };
+		C2A38BE528DB827100D8C0F1 /* ErgastAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BE428DB827100D8C0F1 /* ErgastAPI.swift */; };
+		C2A38BE828DB833100D8C0F1 /* DriverInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BE728DB833100D8C0F1 /* DriverInterface.swift */; };
+		C2A38BEA28DB83AB00D8C0F1 /* ErgastInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BE928DB83AB00D8C0F1 /* ErgastInterface.swift */; };
+		C2A38BED28DB841F00D8C0F1 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BEC28DB841F00D8C0F1 /* Driver.swift */; };
+		C2A38BF028DB863000D8C0F1 /* ErgastUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BEF28DB863000D8C0F1 /* ErgastUrls.swift */; };
+		C2A38BF428DB906D00D8C0F1 /* ErgastMockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BF328DB906D00D8C0F1 /* ErgastMockAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +58,12 @@
 		C2A38BDD28DB759E00D8C0F1 /* Example+Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Example+Root.swift"; sourceTree = "<group>"; };
 		C2A38BDF28DB75D200D8C0F1 /* Example+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Example+ViewModel.swift"; sourceTree = "<group>"; };
 		C2A38BE128DB772A00D8C0F1 /* Example+ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Example+ViewState.swift"; sourceTree = "<group>"; };
+		C2A38BE428DB827100D8C0F1 /* ErgastAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErgastAPI.swift; sourceTree = "<group>"; };
+		C2A38BE728DB833100D8C0F1 /* DriverInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverInterface.swift; sourceTree = "<group>"; };
+		C2A38BE928DB83AB00D8C0F1 /* ErgastInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErgastInterface.swift; sourceTree = "<group>"; };
+		C2A38BEC28DB841F00D8C0F1 /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
+		C2A38BEF28DB863000D8C0F1 /* ErgastUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErgastUrls.swift; sourceTree = "<group>"; };
+		C2A38BF328DB906D00D8C0F1 /* ErgastMockAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErgastMockAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +129,7 @@
 		C2A38B9E28DB636B00D8C0F1 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				C2A38BF128DB904A00D8C0F1 /* Service */,
 				C2A38B9F28DB636B00D8C0F1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -142,6 +155,7 @@
 		C2A38BC228DB63BE00D8C0F1 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				C2A38BE328DB822000D8C0F1 /* ErgastAPI */,
 				C2A38BC628DB63F400D8C0F1 /* Network */,
 			);
 			path = Services;
@@ -158,6 +172,7 @@
 		C2A38BC428DB63D900D8C0F1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				C2A38BEC28DB841F00D8C0F1 /* Driver.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -201,6 +216,57 @@
 				C2A38BE128DB772A00D8C0F1 /* Example+ViewState.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C2A38BE328DB822000D8C0F1 /* ErgastAPI */ = {
+			isa = PBXGroup;
+			children = (
+				C2A38BE628DB831500D8C0F1 /* Interface */,
+				C2A38BE428DB827100D8C0F1 /* ErgastAPI.swift */,
+			);
+			path = ErgastAPI;
+			sourceTree = "<group>";
+		};
+		C2A38BE628DB831500D8C0F1 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				C2A38BEE28DB860900D8C0F1 /* URLS */,
+				C2A38BEB28DB83E300D8C0F1 /* Common */,
+				C2A38BE728DB833100D8C0F1 /* DriverInterface.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		C2A38BEB28DB83E300D8C0F1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C2A38BE928DB83AB00D8C0F1 /* ErgastInterface.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C2A38BEE28DB860900D8C0F1 /* URLS */ = {
+			isa = PBXGroup;
+			children = (
+				C2A38BEF28DB863000D8C0F1 /* ErgastUrls.swift */,
+			);
+			path = URLS;
+			sourceTree = "<group>";
+		};
+		C2A38BF128DB904A00D8C0F1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C2A38BF228DB905700D8C0F1 /* ErgastAPI */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C2A38BF228DB905700D8C0F1 /* ErgastAPI */ = {
+			isa = PBXGroup;
+			children = (
+				C2A38BF328DB906D00D8C0F1 /* ErgastMockAPI.swift */,
+			);
+			path = ErgastAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -336,7 +402,13 @@
 				C2A38BDE28DB759E00D8C0F1 /* Example+Root.swift in Sources */,
 				C2A38B9B28DB636700D8C0F1 /* ContentView.swift in Sources */,
 				C2A38BE028DB75D200D8C0F1 /* Example+ViewModel.swift in Sources */,
+				C2A38BE528DB827100D8C0F1 /* ErgastAPI.swift in Sources */,
+				C2A38BF428DB906D00D8C0F1 /* ErgastMockAPI.swift in Sources */,
 				C2A38B9928DB636700D8C0F1 /* BoxBoxApp.swift in Sources */,
+				C2A38BED28DB841F00D8C0F1 /* Driver.swift in Sources */,
+				C2A38BEA28DB83AB00D8C0F1 /* ErgastInterface.swift in Sources */,
+				C2A38BF028DB863000D8C0F1 /* ErgastUrls.swift in Sources */,
+				C2A38BE828DB833100D8C0F1 /* DriverInterface.swift in Sources */,
 				C2A38BC828DB642400D8C0F1 /* Network.swift in Sources */,
 				C2A38BE228DB772A00D8C0F1 /* Example+ViewState.swift in Sources */,
 			);

@@ -11,21 +11,33 @@ extension ExampleRootView {
     @MainActor final class ViewModel: ObservableObject {
         @Published public internal(set) var state: ViewState
 
+        let network: Network
+        let api: DriverApi
+
         init() {
             state = .loading
+            network = Network()
+            api = ErgastMockApi(network: network)
         }
 
         func fetchDriver() async {
-            let newDriver = Driver(name: "Charles", points: 300)
-            try? await Task.sleep(nanoseconds: 1_000_000_000)
-            emit(state: .loaded(newDriver))
+            emit(state: .loading)
+            do {
+                let drivers = try await api.getDrivers(year: 2_022)
+                emit(state: .loaded(drivers.first!))
+            } catch {
+                emit(state: .error)
+            }
         }
 
         func changeDriver() async {
             emit(state: .loading)
-            let newDriver = Driver(name: "Max", points: 350)
-            try? await Task.sleep(nanoseconds: 1_000_000_000)
-            emit(state: .loaded(newDriver))
+            do {
+                let drivers = try await api.getDrivers(year: 2_022)
+                emit(state: .loaded(drivers.randomElement()!))
+            } catch {
+                emit(state: .error)
+            }
         }
 
         private func emit(state: ViewState) {

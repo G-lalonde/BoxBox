@@ -14,6 +14,7 @@
 		C2A38BAA28DB636C00D8C0F1 /* BoxBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BA928DB636C00D8C0F1 /* BoxBoxTests.swift */; };
 		C2A38BB428DB636C00D8C0F1 /* BoxBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BB328DB636C00D8C0F1 /* BoxBoxUITests.swift */; };
 		C2A38BB628DB636C00D8C0F1 /* BoxBoxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BB528DB636C00D8C0F1 /* BoxBoxUITestsLaunchTests.swift */; };
+		C2A38BC828DB642400D8C0F1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BC728DB642400D8C0F1 /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		C2A38BAF28DB636C00D8C0F1 /* BoxBoxUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoxBoxUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2A38BB328DB636C00D8C0F1 /* BoxBoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxBoxUITests.swift; sourceTree = "<group>"; };
 		C2A38BB528DB636C00D8C0F1 /* BoxBoxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxBoxUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C2A38BC728DB642400D8C0F1 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,10 @@
 		C2A38B9728DB636700D8C0F1 /* BoxBox */ = {
 			isa = PBXGroup;
 			children = (
+				C2A38BC528DB63E600D8C0F1 /* Factory */,
+				C2A38BC428DB63D900D8C0F1 /* Models */,
+				C2A38BC328DB63C900D8C0F1 /* Features */,
+				C2A38BC228DB63BE00D8C0F1 /* Services */,
 				C2A38B9828DB636700D8C0F1 /* BoxBoxApp.swift */,
 				C2A38B9A28DB636700D8C0F1 /* ContentView.swift */,
 				C2A38B9C28DB636B00D8C0F1 /* Assets.xcassets */,
@@ -125,6 +131,43 @@
 				C2A38BB528DB636C00D8C0F1 /* BoxBoxUITestsLaunchTests.swift */,
 			);
 			path = BoxBoxUITests;
+			sourceTree = "<group>";
+		};
+		C2A38BC228DB63BE00D8C0F1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C2A38BC628DB63F400D8C0F1 /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C2A38BC328DB63C900D8C0F1 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		C2A38BC428DB63D900D8C0F1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C2A38BC528DB63E600D8C0F1 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		C2A38BC628DB63F400D8C0F1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C2A38BC728DB642400D8C0F1 /* Network.swift */,
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +302,7 @@
 			files = (
 				C2A38B9B28DB636700D8C0F1 /* ContentView.swift in Sources */,
 				C2A38B9928DB636700D8C0F1 /* BoxBoxApp.swift in Sources */,
+				C2A38BC828DB642400D8C0F1 /* Network.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

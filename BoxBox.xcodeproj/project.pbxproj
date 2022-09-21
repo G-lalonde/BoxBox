@@ -15,6 +15,9 @@
 		C2A38BB428DB636C00D8C0F1 /* BoxBoxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BB328DB636C00D8C0F1 /* BoxBoxUITests.swift */; };
 		C2A38BB628DB636C00D8C0F1 /* BoxBoxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BB528DB636C00D8C0F1 /* BoxBoxUITestsLaunchTests.swift */; };
 		C2A38BC828DB642400D8C0F1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BC728DB642400D8C0F1 /* Network.swift */; };
+		C2A38BDE28DB759E00D8C0F1 /* Example+Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BDD28DB759E00D8C0F1 /* Example+Root.swift */; };
+		C2A38BE028DB75D200D8C0F1 /* Example+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BDF28DB75D200D8C0F1 /* Example+ViewModel.swift */; };
+		C2A38BE228DB772A00D8C0F1 /* Example+ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BE128DB772A00D8C0F1 /* Example+ViewState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		C2A38BB328DB636C00D8C0F1 /* BoxBoxUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxBoxUITests.swift; sourceTree = "<group>"; };
 		C2A38BB528DB636C00D8C0F1 /* BoxBoxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxBoxUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C2A38BC728DB642400D8C0F1 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		C2A38BDD28DB759E00D8C0F1 /* Example+Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Example+Root.swift"; sourceTree = "<group>"; };
+		C2A38BDF28DB75D200D8C0F1 /* Example+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Example+ViewModel.swift"; sourceTree = "<group>"; };
+		C2A38BE128DB772A00D8C0F1 /* Example+ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Example+ViewState.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +102,7 @@
 		C2A38B9728DB636700D8C0F1 /* BoxBox */ = {
 			isa = PBXGroup;
 			children = (
-				C2A38BC528DB63E600D8C0F1 /* Factory */,
+				C2A38BC528DB63E600D8C0F1 /* DependencyInjection */,
 				C2A38BC428DB63D900D8C0F1 /* Models */,
 				C2A38BC328DB63C900D8C0F1 /* Features */,
 				C2A38BC228DB63BE00D8C0F1 /* Services */,
@@ -144,6 +150,7 @@
 		C2A38BC328DB63C900D8C0F1 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				C2A38BC928DB6E1A00D8C0F1 /* Example */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -155,11 +162,11 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		C2A38BC528DB63E600D8C0F1 /* Factory */ = {
+		C2A38BC528DB63E600D8C0F1 /* DependencyInjection */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Factory;
+			path = DependencyInjection;
 			sourceTree = "<group>";
 		};
 		C2A38BC628DB63F400D8C0F1 /* Network */ = {
@@ -168,6 +175,32 @@
 				C2A38BC728DB642400D8C0F1 /* Network.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		C2A38BC928DB6E1A00D8C0F1 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				C2A38BDC28DB758F00D8C0F1 /* ViewModel */,
+				C2A38BD028DB6F0D00D8C0F1 /* Views */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		C2A38BD028DB6F0D00D8C0F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C2A38BDD28DB759E00D8C0F1 /* Example+Root.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C2A38BDC28DB758F00D8C0F1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C2A38BDF28DB75D200D8C0F1 /* Example+ViewModel.swift */,
+				C2A38BE128DB772A00D8C0F1 /* Example+ViewState.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,9 +333,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2A38BDE28DB759E00D8C0F1 /* Example+Root.swift in Sources */,
 				C2A38B9B28DB636700D8C0F1 /* ContentView.swift in Sources */,
+				C2A38BE028DB75D200D8C0F1 /* Example+ViewModel.swift in Sources */,
 				C2A38B9928DB636700D8C0F1 /* BoxBoxApp.swift in Sources */,
 				C2A38BC828DB642400D8C0F1 /* Network.swift in Sources */,
+				C2A38BE228DB772A00D8C0F1 /* Example+ViewState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,7 @@ import SwiftUI
 struct ViewFactory {
     enum ViewId {
         case example
+        case drivers
     }
 }
 
@@ -17,19 +18,22 @@ extension ViewFactory {
     struct Factory {
         let assembly: ViewFactoryAssembly
 
-        @MainActor func makeView(id: ViewId) -> some View {
+        @MainActor
+        @ViewBuilder
+        func makeView(id: ViewId) -> some View {
             switch id {
                 case .example:
-                    return assembly.makeExampleView(viewFactory: self)
+                    assembly.makeExampleView(viewFactory: self)
+                case .drivers:
+                    assembly.makeDriversView(viewFactory: self)
             }
         }
     }
 }
 
 protocol ViewFactoryAssembly {
-    @MainActor func makeExampleView(
-        viewFactory: ViewFactory.Factory
-    ) -> Example.View.Root
+    @MainActor func makeExampleView(viewFactory: ViewFactory.Factory) -> Example.View.Root
+    @MainActor func makeDriversView(viewFactory: ViewFactory.Factory) -> Drivers.View.Root
 }
 
 extension ViewFactory {

@@ -24,10 +24,16 @@
 		C2A38BED28DB841F00D8C0F1 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BEC28DB841F00D8C0F1 /* Driver.swift */; };
 		C2A38BF028DB863000D8C0F1 /* ErgastUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BEF28DB863000D8C0F1 /* ErgastUrls.swift */; };
 		C2A38BF428DB906D00D8C0F1 /* ErgastMockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BF328DB906D00D8C0F1 /* ErgastMockAPI.swift */; };
-		C2A38BF728DB93B600D8C0F1 /* ExampleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BF628DB93B600D8C0F1 /* ExampleAssembly.swift */; };
+		C2A38BF728DB93B600D8C0F1 /* Example+Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BF628DB93B600D8C0F1 /* Example+Assembly.swift */; };
 		C2A38BF928DB93D100D8C0F1 /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BF828DB93D100D8C0F1 /* ViewFactory.swift */; };
 		C2A38BFC28DB965D00D8C0F1 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BFB28DB965D00D8C0F1 /* Example.swift */; };
 		C2A38BFE28DB967100D8C0F1 /* Example+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BFD28DB967100D8C0F1 /* Example+View.swift */; };
+		C2A38C0D28DBE04F00D8C0F1 /* Drivers+ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38C0628DBE04F00D8C0F1 /* Drivers+ViewState.swift */; };
+		C2A38C0E28DBE04F00D8C0F1 /* Drivers+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38C0728DBE04F00D8C0F1 /* Drivers+ViewModel.swift */; };
+		C2A38C0F28DBE04F00D8C0F1 /* Drivers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38C0928DBE04F00D8C0F1 /* Drivers.swift */; };
+		C2A38C1028DBE04F00D8C0F1 /* Drivers+Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38C0B28DBE04F00D8C0F1 /* Drivers+Root.swift */; };
+		C2A38C1128DBE04F00D8C0F1 /* Drivers+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38C0C28DBE04F00D8C0F1 /* Drivers+View.swift */; };
+		C2A38C1428DBE09D00D8C0F1 /* Drivers+Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38C1328DBE09D00D8C0F1 /* Drivers+Assembly.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,10 +74,16 @@
 		C2A38BEC28DB841F00D8C0F1 /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
 		C2A38BEF28DB863000D8C0F1 /* ErgastUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErgastUrls.swift; sourceTree = "<group>"; };
 		C2A38BF328DB906D00D8C0F1 /* ErgastMockAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErgastMockAPI.swift; sourceTree = "<group>"; };
-		C2A38BF628DB93B600D8C0F1 /* ExampleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleAssembly.swift; sourceTree = "<group>"; };
+		C2A38BF628DB93B600D8C0F1 /* Example+Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Example+Assembly.swift"; sourceTree = "<group>"; };
 		C2A38BF828DB93D100D8C0F1 /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
 		C2A38BFB28DB965D00D8C0F1 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
 		C2A38BFD28DB967100D8C0F1 /* Example+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Example+View.swift"; sourceTree = "<group>"; };
+		C2A38C0628DBE04F00D8C0F1 /* Drivers+ViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Drivers+ViewState.swift"; sourceTree = "<group>"; };
+		C2A38C0728DBE04F00D8C0F1 /* Drivers+ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Drivers+ViewModel.swift"; sourceTree = "<group>"; };
+		C2A38C0928DBE04F00D8C0F1 /* Drivers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Drivers.swift; sourceTree = "<group>"; };
+		C2A38C0B28DBE04F00D8C0F1 /* Drivers+Root.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Drivers+Root.swift"; sourceTree = "<group>"; };
+		C2A38C0C28DBE04F00D8C0F1 /* Drivers+View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Drivers+View.swift"; sourceTree = "<group>"; };
+		C2A38C1328DBE09D00D8C0F1 /* Drivers+Assembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Drivers+Assembly.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +184,7 @@
 		C2A38BC328DB63C900D8C0F1 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				C2A38C0428DBE04F00D8C0F1 /* Drivers */,
 				C2A38BC928DB6E1A00D8C0F1 /* Example */,
 			);
 			path = Features;
@@ -189,6 +202,7 @@
 			isa = PBXGroup;
 			children = (
 				C2A38BF828DB93D100D8C0F1 /* ViewFactory.swift */,
+				C2A38C1228DBE09D00D8C0F1 /* Drivers */,
 				C2A38BF528DB93A100D8C0F1 /* Example */,
 			);
 			path = DependencyInjection;
@@ -284,7 +298,7 @@
 		C2A38BF528DB93A100D8C0F1 /* Example */ = {
 			isa = PBXGroup;
 			children = (
-				C2A38BF628DB93B600D8C0F1 /* ExampleAssembly.swift */,
+				C2A38BF628DB93B600D8C0F1 /* Example+Assembly.swift */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -295,6 +309,50 @@
 				C2A38BFB28DB965D00D8C0F1 /* Example.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		C2A38C0428DBE04F00D8C0F1 /* Drivers */ = {
+			isa = PBXGroup;
+			children = (
+				C2A38C0828DBE04F00D8C0F1 /* Common */,
+				C2A38C0528DBE04F00D8C0F1 /* ViewModel */,
+				C2A38C0A28DBE04F00D8C0F1 /* Views */,
+			);
+			path = Drivers;
+			sourceTree = "<group>";
+		};
+		C2A38C0528DBE04F00D8C0F1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C2A38C0628DBE04F00D8C0F1 /* Drivers+ViewState.swift */,
+				C2A38C0728DBE04F00D8C0F1 /* Drivers+ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C2A38C0828DBE04F00D8C0F1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C2A38C0928DBE04F00D8C0F1 /* Drivers.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C2A38C0A28DBE04F00D8C0F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C2A38C0C28DBE04F00D8C0F1 /* Drivers+View.swift */,
+				C2A38C0B28DBE04F00D8C0F1 /* Drivers+Root.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C2A38C1228DBE09D00D8C0F1 /* Drivers */ = {
+			isa = PBXGroup;
+			children = (
+				C2A38C1328DBE09D00D8C0F1 /* Drivers+Assembly.swift */,
+			);
+			path = Drivers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -428,10 +486,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2A38BDE28DB759E00D8C0F1 /* Example+Root.swift in Sources */,
-				C2A38BF728DB93B600D8C0F1 /* ExampleAssembly.swift in Sources */,
+				C2A38BF728DB93B600D8C0F1 /* Example+Assembly.swift in Sources */,
+				C2A38C1428DBE09D00D8C0F1 /* Drivers+Assembly.swift in Sources */,
 				C2A38B9B28DB636700D8C0F1 /* ContentView.swift in Sources */,
 				C2A38BE028DB75D200D8C0F1 /* Example+ViewModel.swift in Sources */,
 				C2A38BE528DB827100D8C0F1 /* ErgastAPI.swift in Sources */,
+				C2A38C0E28DBE04F00D8C0F1 /* Drivers+ViewModel.swift in Sources */,
+				C2A38C1128DBE04F00D8C0F1 /* Drivers+View.swift in Sources */,
 				C2A38BF428DB906D00D8C0F1 /* ErgastMockAPI.swift in Sources */,
 				C2A38B9928DB636700D8C0F1 /* BoxBoxApp.swift in Sources */,
 				C2A38BED28DB841F00D8C0F1 /* Driver.swift in Sources */,
@@ -439,8 +500,11 @@
 				C2A38BF028DB863000D8C0F1 /* ErgastUrls.swift in Sources */,
 				C2A38BE828DB833100D8C0F1 /* DriverInterface.swift in Sources */,
 				C2A38BC828DB642400D8C0F1 /* Network.swift in Sources */,
+				C2A38C0F28DBE04F00D8C0F1 /* Drivers.swift in Sources */,
 				C2A38BF928DB93D100D8C0F1 /* ViewFactory.swift in Sources */,
 				C2A38BE228DB772A00D8C0F1 /* Example+ViewState.swift in Sources */,
+				C2A38C1028DBE04F00D8C0F1 /* Drivers+Root.swift in Sources */,
+				C2A38C0D28DBE04F00D8C0F1 /* Drivers+ViewState.swift in Sources */,
 				C2A38BFC28DB965D00D8C0F1 /* Example.swift in Sources */,
 				C2A38BFE28DB967100D8C0F1 /* Example+View.swift in Sources */,
 			);

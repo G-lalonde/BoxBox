@@ -9,11 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     let viewFactory = ViewFactory.Factory(
-        assembly: ViewFactory.Assembly.ForPreview()
+        assembly: ViewFactory.Assembly.ForRuntime()
     )
 
     var body: some View {
-        viewFactory.makeView(id: .example)
+        viewFactory.makeView(id: .drivers)
     }
 }
 

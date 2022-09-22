@@ -17,7 +17,8 @@ struct ErgastApi: DriverApi {
     func getDrivers(year: Int) async throws -> [Driver] {
         let url = ErgastUrls.drivers(year: year)
 
-        let response: ErgastInterface.DriverYear = try await network.requestAsync(for: url)
+        let response: ErgastInterface.DriverYear.DriverYear = try await network
+            .requestAsync(for: url)
 
         return response.mrData.driverTable.drivers.map { driver in
             Driver(
@@ -31,5 +32,33 @@ struct ErgastApi: DriverApi {
                 nationality: driver.nationality
             )
         }
+    }
+
+    func getConstructorStandings() async throws -> [ConstructorStanding] {
+        let url = ErgastUrls.constructorStandings()
+
+        let response: ErgastInterface.ConstructorStandings.ConstructorStandings = try await network
+            .requestAsync(for: url)
+
+        return response
+            .mrData
+            .standingsTable
+            .standingsLists
+            .first!
+            .constructorStandings
+            .map { standings in
+                ConstructorStanding(
+                    position: standings.position,
+                    positionText: standings.positionText,
+                    points: standings.points,
+                    wins: standings.wins,
+                    constructor: Constructor(
+                        constructorId: standings.constructor.constructorId,
+                        url: standings.constructor.url,
+                        name: standings.constructor.name,
+                        nationality: standings.constructor.nationality
+                    )
+                )
+            }
     }
 }

@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension ExampleRootView.ViewModel {
+extension Example.View.ViewModel {
     enum ViewState {
         case loading
         case loaded(Driver)

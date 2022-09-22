@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-extension ExampleRootView {
+extension Example.View {
     @MainActor final class ViewModel: ObservableObject {
         @Published public internal(set) var state: ViewState
 
         let network: Network
         let api: DriverApi
 
-        init() {
+        init(network: Network, api: DriverApi) {
             state = .loading
-            network = Network()
-            api = ErgastMockApi(network: network)
+            self.network = network
+            self.api = api
         }
 
         func fetchDriver() async {

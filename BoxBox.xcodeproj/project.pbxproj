@@ -24,6 +24,10 @@
 		C2A38BED28DB841F00D8C0F1 /* Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BEC28DB841F00D8C0F1 /* Driver.swift */; };
 		C2A38BF028DB863000D8C0F1 /* ErgastUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BEF28DB863000D8C0F1 /* ErgastUrls.swift */; };
 		C2A38BF428DB906D00D8C0F1 /* ErgastMockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BF328DB906D00D8C0F1 /* ErgastMockAPI.swift */; };
+		C2A38BF728DB93B600D8C0F1 /* ExampleAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BF628DB93B600D8C0F1 /* ExampleAssembly.swift */; };
+		C2A38BF928DB93D100D8C0F1 /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BF828DB93D100D8C0F1 /* ViewFactory.swift */; };
+		C2A38BFC28DB965D00D8C0F1 /* Example.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BFB28DB965D00D8C0F1 /* Example.swift */; };
+		C2A38BFE28DB967100D8C0F1 /* Example+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BFD28DB967100D8C0F1 /* Example+View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +68,10 @@
 		C2A38BEC28DB841F00D8C0F1 /* Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Driver.swift; sourceTree = "<group>"; };
 		C2A38BEF28DB863000D8C0F1 /* ErgastUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErgastUrls.swift; sourceTree = "<group>"; };
 		C2A38BF328DB906D00D8C0F1 /* ErgastMockAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErgastMockAPI.swift; sourceTree = "<group>"; };
+		C2A38BF628DB93B600D8C0F1 /* ExampleAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleAssembly.swift; sourceTree = "<group>"; };
+		C2A38BF828DB93D100D8C0F1 /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
+		C2A38BFB28DB965D00D8C0F1 /* Example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Example.swift; sourceTree = "<group>"; };
+		C2A38BFD28DB967100D8C0F1 /* Example+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Example+View.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,12 +122,12 @@
 		C2A38B9728DB636700D8C0F1 /* BoxBox */ = {
 			isa = PBXGroup;
 			children = (
-				C2A38BC528DB63E600D8C0F1 /* DependencyInjection */,
-				C2A38BC428DB63D900D8C0F1 /* Models */,
-				C2A38BC328DB63C900D8C0F1 /* Features */,
-				C2A38BC228DB63BE00D8C0F1 /* Services */,
 				C2A38B9828DB636700D8C0F1 /* BoxBoxApp.swift */,
 				C2A38B9A28DB636700D8C0F1 /* ContentView.swift */,
+				C2A38BC528DB63E600D8C0F1 /* DependencyInjection */,
+				C2A38BC328DB63C900D8C0F1 /* Features */,
+				C2A38BC428DB63D900D8C0F1 /* Models */,
+				C2A38BC228DB63BE00D8C0F1 /* Services */,
 				C2A38B9C28DB636B00D8C0F1 /* Assets.xcassets */,
 				C2A38B9E28DB636B00D8C0F1 /* Preview Content */,
 			);
@@ -180,6 +188,8 @@
 		C2A38BC528DB63E600D8C0F1 /* DependencyInjection */ = {
 			isa = PBXGroup;
 			children = (
+				C2A38BF828DB93D100D8C0F1 /* ViewFactory.swift */,
+				C2A38BF528DB93A100D8C0F1 /* Example */,
 			);
 			path = DependencyInjection;
 			sourceTree = "<group>";
@@ -195,6 +205,7 @@
 		C2A38BC928DB6E1A00D8C0F1 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				C2A38BFA28DB964600D8C0F1 /* Common */,
 				C2A38BDC28DB758F00D8C0F1 /* ViewModel */,
 				C2A38BD028DB6F0D00D8C0F1 /* Views */,
 			);
@@ -204,6 +215,7 @@
 		C2A38BD028DB6F0D00D8C0F1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C2A38BFD28DB967100D8C0F1 /* Example+View.swift */,
 				C2A38BDD28DB759E00D8C0F1 /* Example+Root.swift */,
 			);
 			path = Views;
@@ -267,6 +279,22 @@
 				C2A38BF328DB906D00D8C0F1 /* ErgastMockAPI.swift */,
 			);
 			path = ErgastAPI;
+			sourceTree = "<group>";
+		};
+		C2A38BF528DB93A100D8C0F1 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				C2A38BF628DB93B600D8C0F1 /* ExampleAssembly.swift */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		C2A38BFA28DB964600D8C0F1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C2A38BFB28DB965D00D8C0F1 /* Example.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2A38BDE28DB759E00D8C0F1 /* Example+Root.swift in Sources */,
+				C2A38BF728DB93B600D8C0F1 /* ExampleAssembly.swift in Sources */,
 				C2A38B9B28DB636700D8C0F1 /* ContentView.swift in Sources */,
 				C2A38BE028DB75D200D8C0F1 /* Example+ViewModel.swift in Sources */,
 				C2A38BE528DB827100D8C0F1 /* ErgastAPI.swift in Sources */,
@@ -410,7 +439,10 @@
 				C2A38BF028DB863000D8C0F1 /* ErgastUrls.swift in Sources */,
 				C2A38BE828DB833100D8C0F1 /* DriverInterface.swift in Sources */,
 				C2A38BC828DB642400D8C0F1 /* Network.swift in Sources */,
+				C2A38BF928DB93D100D8C0F1 /* ViewFactory.swift in Sources */,
 				C2A38BE228DB772A00D8C0F1 /* Example+ViewState.swift in Sources */,
+				C2A38BFC28DB965D00D8C0F1 /* Example.swift in Sources */,
+				C2A38BFE28DB967100D8C0F1 /* Example+View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,13 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    let viewFactory = ViewFactory.Factory(
+        assembly: ViewFactory.Assembly.ForPreview()
+    )
+
     var body: some View {
-        ExampleRootView(viewModel: .init())
+        viewFactory.makeView(id: .example)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
+    static let viewFactory = ViewFactory.Factory(
+        assembly: ViewFactory.Assembly.ForPreview()
+    )
+
     static var previews: some View {
-        ContentView()
+        viewFactory.makeView(id: .example)
     }
 }

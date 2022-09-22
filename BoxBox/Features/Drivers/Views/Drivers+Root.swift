@@ -38,7 +38,7 @@ extension Drivers.View {
                 .padding()
         }
 
-        func loadedView(drivers: [Driver]) -> some View {
+        func loadedView(drivers: [Models.Driver]) -> some View {
             ScrollView {
                 ForEach(drivers, id: \.code) { driver in
                     Text(driver.code)

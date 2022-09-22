@@ -8,9 +8,13 @@
 import Foundation
 
 class Network {
+    static let shared = Network()
+
     func requestAsync<T: Decodable>(for url: URL) async throws -> T {
         let (data, _) = try await URLSession.shared.data(from: url)
         let decoder = JSONDecoder()
         return try decoder.decode(T.self, from: data)
     }
+
+    private init() { }
 }

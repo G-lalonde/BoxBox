@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		C212FEC028DCB9B100CEAA02 /* ConstructorStandings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C212FEBF28DCB9B100CEAA02 /* ConstructorStandings.swift */; };
 		C212FEC228DCBA9000CEAA02 /* Constructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C212FEC128DCBA9000CEAA02 /* Constructor.swift */; };
+		C212FECC28DCBD4F00CEAA02 /* ConstructorStanding+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C212FEC528DCBD4F00CEAA02 /* ConstructorStanding+ViewModel.swift */; };
+		C212FECD28DCBD4F00CEAA02 /* ConstructorStanding+ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C212FEC628DCBD4F00CEAA02 /* ConstructorStanding+ViewState.swift */; };
+		C212FECE28DCBD4F00CEAA02 /* ConstructorStanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C212FEC828DCBD4F00CEAA02 /* ConstructorStanding.swift */; };
+		C212FECF28DCBD4F00CEAA02 /* ConstructorStanding+Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = C212FECA28DCBD4F00CEAA02 /* ConstructorStanding+Root.swift */; };
+		C212FED028DCBD4F00CEAA02 /* ConstructorStanding+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C212FECB28DCBD4F00CEAA02 /* ConstructorStanding+View.swift */; };
+		C212FED228DCBDD400CEAA02 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C212FED128DCBDD400CEAA02 /* Models.swift */; };
+		C212FED528DCC07B00CEAA02 /* Constructor+Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C212FED428DCC07B00CEAA02 /* Constructor+Assembly.swift */; };
 		C2A38B9928DB636700D8C0F1 /* BoxBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38B9828DB636700D8C0F1 /* BoxBoxApp.swift */; };
 		C2A38B9B28DB636700D8C0F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38B9A28DB636700D8C0F1 /* ContentView.swift */; };
 		C2A38B9D28DB636B00D8C0F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2A38B9C28DB636B00D8C0F1 /* Assets.xcassets */; };
@@ -58,6 +65,13 @@
 /* Begin PBXFileReference section */
 		C212FEBF28DCB9B100CEAA02 /* ConstructorStandings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstructorStandings.swift; sourceTree = "<group>"; };
 		C212FEC128DCBA9000CEAA02 /* Constructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constructor.swift; sourceTree = "<group>"; };
+		C212FEC528DCBD4F00CEAA02 /* ConstructorStanding+ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConstructorStanding+ViewModel.swift"; sourceTree = "<group>"; };
+		C212FEC628DCBD4F00CEAA02 /* ConstructorStanding+ViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConstructorStanding+ViewState.swift"; sourceTree = "<group>"; };
+		C212FEC828DCBD4F00CEAA02 /* ConstructorStanding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstructorStanding.swift; sourceTree = "<group>"; };
+		C212FECA28DCBD4F00CEAA02 /* ConstructorStanding+Root.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConstructorStanding+Root.swift"; sourceTree = "<group>"; };
+		C212FECB28DCBD4F00CEAA02 /* ConstructorStanding+View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ConstructorStanding+View.swift"; sourceTree = "<group>"; };
+		C212FED128DCBDD400CEAA02 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		C212FED428DCC07B00CEAA02 /* Constructor+Assembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Constructor+Assembly.swift"; sourceTree = "<group>"; };
 		C2A38B9528DB636700D8C0F1 /* BoxBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoxBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2A38B9828DB636700D8C0F1 /* BoxBoxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxBoxApp.swift; sourceTree = "<group>"; };
 		C2A38B9A28DB636700D8C0F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -115,6 +129,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C212FEC328DCBD4F00CEAA02 /* ConstructorStandings */ = {
+			isa = PBXGroup;
+			children = (
+				C212FEC428DCBD4F00CEAA02 /* ViewModel */,
+				C212FEC728DCBD4F00CEAA02 /* Common */,
+				C212FEC928DCBD4F00CEAA02 /* Views */,
+			);
+			path = ConstructorStandings;
+			sourceTree = "<group>";
+		};
+		C212FEC428DCBD4F00CEAA02 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C212FEC528DCBD4F00CEAA02 /* ConstructorStanding+ViewModel.swift */,
+				C212FEC628DCBD4F00CEAA02 /* ConstructorStanding+ViewState.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C212FEC728DCBD4F00CEAA02 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C212FEC828DCBD4F00CEAA02 /* ConstructorStanding.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C212FEC928DCBD4F00CEAA02 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C212FECA28DCBD4F00CEAA02 /* ConstructorStanding+Root.swift */,
+				C212FECB28DCBD4F00CEAA02 /* ConstructorStanding+View.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C212FED328DCC07B00CEAA02 /* Constructor */ = {
+			isa = PBXGroup;
+			children = (
+				C212FED428DCC07B00CEAA02 /* Constructor+Assembly.swift */,
+			);
+			path = Constructor;
+			sourceTree = "<group>";
+		};
 		C2A38B8C28DB636700D8C0F1 = {
 			isa = PBXGroup;
 			children = (
@@ -188,6 +246,7 @@
 		C2A38BC328DB63C900D8C0F1 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				C212FEC328DCBD4F00CEAA02 /* ConstructorStandings */,
 				C2A38C0428DBE04F00D8C0F1 /* Drivers */,
 				C2A38BC928DB6E1A00D8C0F1 /* Example */,
 			);
@@ -199,6 +258,7 @@
 			children = (
 				C2A38BEC28DB841F00D8C0F1 /* Driver.swift */,
 				C212FEC128DCBA9000CEAA02 /* Constructor.swift */,
+				C212FED128DCBDD400CEAA02 /* Models.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -207,6 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				C2A38BF828DB93D100D8C0F1 /* ViewFactory.swift */,
+				C212FED328DCC07B00CEAA02 /* Constructor */,
 				C2A38C1228DBE09D00D8C0F1 /* Drivers */,
 				C2A38BF528DB93A100D8C0F1 /* Example */,
 			);
@@ -491,25 +552,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C212FECD28DCBD4F00CEAA02 /* ConstructorStanding+ViewState.swift in Sources */,
 				C2A38BDE28DB759E00D8C0F1 /* Example+Root.swift in Sources */,
 				C2A38BF728DB93B600D8C0F1 /* Example+Assembly.swift in Sources */,
 				C2A38C1428DBE09D00D8C0F1 /* Drivers+Assembly.swift in Sources */,
 				C2A38B9B28DB636700D8C0F1 /* ContentView.swift in Sources */,
+				C212FED028DCBD4F00CEAA02 /* ConstructorStanding+View.swift in Sources */,
+				C212FED528DCC07B00CEAA02 /* Constructor+Assembly.swift in Sources */,
 				C2A38BE028DB75D200D8C0F1 /* Example+ViewModel.swift in Sources */,
 				C212FEC028DCB9B100CEAA02 /* ConstructorStandings.swift in Sources */,
 				C2A38BE528DB827100D8C0F1 /* ErgastAPI.swift in Sources */,
+				C212FED228DCBDD400CEAA02 /* Models.swift in Sources */,
 				C2A38C0E28DBE04F00D8C0F1 /* Drivers+ViewModel.swift in Sources */,
 				C2A38C1128DBE04F00D8C0F1 /* Drivers+View.swift in Sources */,
 				C2A38BF428DB906D00D8C0F1 /* ErgastMockAPI.swift in Sources */,
 				C2A38B9928DB636700D8C0F1 /* BoxBoxApp.swift in Sources */,
+				C212FECE28DCBD4F00CEAA02 /* ConstructorStanding.swift in Sources */,
 				C2A38BED28DB841F00D8C0F1 /* Driver.swift in Sources */,
 				C2A38BEA28DB83AB00D8C0F1 /* ErgastInterface.swift in Sources */,
 				C2A38BF028DB863000D8C0F1 /* ErgastUrls.swift in Sources */,
 				C212FEC228DCBA9000CEAA02 /* Constructor.swift in Sources */,
 				C2A38BE828DB833100D8C0F1 /* DriverInterface.swift in Sources */,
 				C2A38BC828DB642400D8C0F1 /* Network.swift in Sources */,
+				C212FECF28DCBD4F00CEAA02 /* ConstructorStanding+Root.swift in Sources */,
 				C2A38C0F28DBE04F00D8C0F1 /* Drivers.swift in Sources */,
 				C2A38BF928DB93D100D8C0F1 /* ViewFactory.swift in Sources */,
+				C212FECC28DCBD4F00CEAA02 /* ConstructorStanding+ViewModel.swift in Sources */,
 				C2A38BE228DB772A00D8C0F1 /* Example+ViewState.swift in Sources */,
 				C2A38C1028DBE04F00D8C0F1 /* Drivers+Root.swift in Sources */,
 				C2A38C0D28DBE04F00D8C0F1 /* Drivers+ViewState.swift in Sources */,

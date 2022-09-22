@@ -13,7 +13,7 @@ struct ContentView: View {
     )
 
     var body: some View {
-        viewFactory.makeView(id: .drivers)
+        viewFactory.makeView(id: .constructor)
     }
 }
 

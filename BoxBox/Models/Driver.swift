@@ -7,19 +7,21 @@
 
 import Foundation
 
-struct Driver: Codable {
-    let driverId: String
-    let permanentNumber: String
-    let code: String
-    let url: String
-    let givenName: String
-    let familyName: String
-    let dateOfBirth: String
-    let nationality: String
+extension Models {
+    struct Driver {
+        let driverId: String
+        let permanentNumber: String
+        let code: String
+        let url: String
+        let givenName: String
+        let familyName: String
+        let dateOfBirth: String
+        let nationality: String
+    }
 }
 
-extension Driver {
-    static let mock1 = Driver(
+extension Models.Driver {
+    static let mock1 = Models.Driver(
         driverId: "jeremy",
         permanentNumber: "99",
         code: "JAY",
@@ -30,7 +32,7 @@ extension Driver {
         nationality: "Canadian"
     )
 
-    static let mock2 = Driver(
+    static let mock2 = Models.Driver(
         driverId: "daniel",
         permanentNumber: "3",
         code: "RIC",
@@ -41,7 +43,7 @@ extension Driver {
         nationality: "Australien"
     )
 
-    static let mock3 = Driver(
+    static let mock3 = Models.Driver(
         driverId: "max",
         permanentNumber: "1",
         code: "VER",

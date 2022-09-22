@@ -10,7 +10,7 @@ import Foundation
 extension Drivers.View.ViewModel {
     enum ViewState {
         case loading
-        case loaded([Driver])
+        case loaded([Models.Driver])
         case error
     }
 }

@@ -11,6 +11,7 @@ struct ViewFactory {
     enum ViewId {
         case example
         case drivers
+        case constructor
     }
 }
 
@@ -26,6 +27,8 @@ extension ViewFactory {
                     assembly.makeExampleView(viewFactory: self)
                 case .drivers:
                     assembly.makeDriversView(viewFactory: self)
+                case .constructor:
+                    assembly.makeConstructorView(viewFactory: self)
             }
         }
     }
@@ -34,6 +37,8 @@ extension ViewFactory {
 protocol ViewFactoryAssembly {
     @MainActor func makeExampleView(viewFactory: ViewFactory.Factory) -> Example.View.Root
     @MainActor func makeDriversView(viewFactory: ViewFactory.Factory) -> Drivers.View.Root
+    @MainActor func makeConstructorView(viewFactory: ViewFactory.Factory) -> ConstructorStanding
+        .View.Root
 }
 
 extension ViewFactory {

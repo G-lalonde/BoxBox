@@ -8,20 +8,21 @@
 import Foundation
 
 protocol DriverApi {
-    func getDrivers(year: Int) async throws -> [Driver]
+    func getDrivers(year: Int) async throws -> [Models.Driver]
+    func getConstructorStandings() async throws -> [Models.ConstructorStanding]
 }
 
 struct ErgastApi: DriverApi {
     let network: Network
 
-    func getDrivers(year: Int) async throws -> [Driver] {
+    func getDrivers(year: Int) async throws -> [Models.Driver] {
         let url = ErgastUrls.drivers(year: year)
 
         let response: ErgastInterface.DriverYear.DriverYear = try await network
             .requestAsync(for: url)
 
         return response.mrData.driverTable.drivers.map { driver in
-            Driver(
+            Models.Driver(
                 driverId: driver.driverID,
                 permanentNumber: driver.permanentNumber,
                 code: driver.code,
@@ -34,7 +35,7 @@ struct ErgastApi: DriverApi {
         }
     }
 
-    func getConstructorStandings() async throws -> [ConstructorStanding] {
+    func getConstructorStandings() async throws -> [Models.ConstructorStanding] {
         let url = ErgastUrls.constructorStandings()
 
         let response: ErgastInterface.ConstructorStandings.ConstructorStandings = try await network
@@ -47,12 +48,12 @@ struct ErgastApi: DriverApi {
             .first!
             .constructorStandings
             .map { standings in
-                ConstructorStanding(
+                Models.ConstructorStanding(
                     position: standings.position,
                     positionText: standings.positionText,
                     points: standings.points,
                     wins: standings.wins,
-                    constructor: Constructor(
+                    constructor: Models.Constructor(
                         constructorId: standings.constructor.constructorId,
                         url: standings.constructor.url,
                         name: standings.constructor.name,

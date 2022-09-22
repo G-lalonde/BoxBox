@@ -1,5 +1,5 @@
 //
-//  ExampleAssembly.swift
+//  Drivers+Assembly.swift
 //  BoxBox
 //
 //  Created by Jérémy Lalonde on 2022-09-21.
@@ -8,14 +8,14 @@
 import Foundation
 
 extension ViewFactory.Assembly.ForRuntime {
-    @MainActor func makeExampleView(
+    @MainActor func makeConstructorView(
         viewFactory: ViewFactory.Factory
-    ) -> Example.View.Root {
+    ) -> ConstructorStanding.View.Root {
         let network = Network.shared
         let api = ErgastApi(network: network)
 
-        return Example.View.Root(
-            viewModel: Example.View.ViewModel(
+        return ConstructorStanding.View.Root(
+            viewModel: ConstructorStanding.View.ViewModel(
                 network: network,
                 api: api
             ),
@@ -25,14 +25,14 @@ extension ViewFactory.Assembly.ForRuntime {
 }
 
 extension ViewFactory.Assembly.ForPreview {
-    @MainActor func makeExampleView(
+    @MainActor func makeConstructorView(
         viewFactory: ViewFactory.Factory
-    ) -> Example.View.Root {
+    ) -> ConstructorStanding.View.Root {
         let network = Network.shared
         let api = ErgastMockApi(network: network)
 
-        return Example.View.Root(
-            viewModel: Example.View.ViewModel(
+        return ConstructorStanding.View.Root(
+            viewModel: ConstructorStanding.View.ViewModel(
                 network: network,
                 api: api
             ),

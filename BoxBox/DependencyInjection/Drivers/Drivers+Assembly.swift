@@ -11,7 +11,7 @@ extension ViewFactory.Assembly.ForRuntime {
     @MainActor func makeDriversView(
         viewFactory: ViewFactory.Factory
     ) -> Drivers.View.Root {
-        let network = Network()
+        let network = Network.shared
         let api = ErgastApi(network: network)
 
         return Drivers.View.Root(
@@ -28,7 +28,7 @@ extension ViewFactory.Assembly.ForPreview {
     @MainActor func makeDriversView(
         viewFactory: ViewFactory.Factory
     ) -> Drivers.View.Root {
-        let network = Network()
+        let network = Network.shared
         let api = ErgastMockApi(network: network)
 
         return Drivers.View.Root(

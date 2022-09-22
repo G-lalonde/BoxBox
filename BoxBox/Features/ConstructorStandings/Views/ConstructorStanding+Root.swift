@@ -1,5 +1,5 @@
 //
-//  Example+Root.swift
+//  ConstructorStanding+Root.swift
 //  BoxBox
 //
 //  Created by Jérémy Lalonde on 2022-09-21.
@@ -7,18 +7,18 @@
 
 import SwiftUI
 
-extension Example.View {
+extension ConstructorStanding.View {
     struct Root: View {
         @ObservedObject var viewModel: ViewModel
         let viewFactory: ViewFactory.Factory
 
         var body: some View {
-            ScrollView {
+            NavigationView {
                 makeView(basedOn: viewModel.state)
                     .task {
-                        await viewModel.fetchDriver()
+                        await viewModel.fetchConstructors()
                     }
-                    .navigationTitle("Example")
+                    .navigationTitle("ConstructorStanding")
             }
         }
 
@@ -26,8 +26,8 @@ extension Example.View {
             switch state {
                 case .loading:
                     loadingView()
-                case let .loaded(driver):
-                    loadedView(driver: driver)
+                case let .loaded(constructorStanding):
+                    loadedView(constructorStanding: constructorStanding)
                 case .error:
                     loadingView()
             }
@@ -38,25 +38,17 @@ extension Example.View {
                 .padding()
         }
 
-        func loadedView(driver: Models.Driver) -> some View {
-            VStack {
-                Text(driver.code)
-                Text(driver.givenName)
-                Text(driver.familyName)
-                Button {
-                    Task {
-                        await viewModel.changeDriver()
-                    }
-                } label: {
-                    Text("Change")
+        func loadedView(constructorStanding: [Models.ConstructorStanding]) -> some View {
+            ScrollView {
+                ForEach(constructorStanding, id: \.constructor) { constructor in
+                    Text(constructor.constructor.name)
                 }
             }
-            .padding()
         }
     }
 }
 
-struct ExampleRootView_Previews: PreviewProvider {
+struct ConstructorStandingRootView_Previews: PreviewProvider {
     static let viewFactory = ViewFactory.Factory(
         assembly: ViewFactory.Assembly.ForPreview()
     )

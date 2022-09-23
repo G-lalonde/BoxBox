@@ -18,7 +18,6 @@
 		C2A38BB628DB636C00D8C0F1 /* BoxBoxUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BB528DB636C00D8C0F1 /* BoxBoxUITestsLaunchTests.swift */; };
 		C2A38BC828DB642400D8C0F1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BC728DB642400D8C0F1 /* Network.swift */; };
 		C2A38BE528DB827100D8C0F1 /* ErgastAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BE428DB827100D8C0F1 /* ErgastAPI.swift */; };
-		C2A38BE828DB833100D8C0F1 /* Interface+DriverInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BE728DB833100D8C0F1 /* Interface+DriverInterface.swift */; };
 		C2A38BEA28DB83AB00D8C0F1 /* ErgastInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BE928DB83AB00D8C0F1 /* ErgastInterface.swift */; };
 		C2A38BED28DB841F00D8C0F1 /* Models+Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BEC28DB841F00D8C0F1 /* Models+Driver.swift */; };
 		C2A38BF028DB863000D8C0F1 /* ErgastUrls.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BEF28DB863000D8C0F1 /* ErgastUrls.swift */; };
@@ -31,6 +30,10 @@
 		C2A38C1128DBE04F00D8C0F1 /* Standing+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38C0C28DBE04F00D8C0F1 /* Standing+View.swift */; };
 		C2A38C1428DBE09D00D8C0F1 /* Standing+Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38C1328DBE09D00D8C0F1 /* Standing+Assembly.swift */; };
 		C2BE3BC228DD4A160057EFFF /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BE3BC128DD4A160057EFFF /* Color.swift */; };
+		C2BE3BC428DE11590057EFFF /* Standing+DriverStandingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BE3BC328DE11590057EFFF /* Standing+DriverStandingCard.swift */; };
+		C2BE3BC628DE2B300057EFFF /* Standing+ConstructorStandingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BE3BC528DE2B300057EFFF /* Standing+ConstructorStandingCard.swift */; };
+		C2BE3BC828DE2BC50057EFFF /* Interface+ConstructorStanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BE3BC728DE2BC50057EFFF /* Interface+ConstructorStanding.swift */; };
+		C2BE3BCA28DE2BEA0057EFFF /* Interface+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BE3BC928DE2BEA0057EFFF /* Interface+Common.swift */; };
 		C2C4EA8528DD3E4300E9D745 /* Interface+DriverStanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4EA8428DD3E4300E9D745 /* Interface+DriverStanding.swift */; };
 		C2C4EA8728DD40C900E9D745 /* Models+DriverStanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4EA8628DD40C900E9D745 /* Models+DriverStanding.swift */; };
 /* End PBXBuildFile section */
@@ -67,7 +70,6 @@
 		C2A38BB528DB636C00D8C0F1 /* BoxBoxUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxBoxUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C2A38BC728DB642400D8C0F1 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		C2A38BE428DB827100D8C0F1 /* ErgastAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErgastAPI.swift; sourceTree = "<group>"; };
-		C2A38BE728DB833100D8C0F1 /* Interface+DriverInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Interface+DriverInterface.swift"; sourceTree = "<group>"; };
 		C2A38BE928DB83AB00D8C0F1 /* ErgastInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErgastInterface.swift; sourceTree = "<group>"; };
 		C2A38BEC28DB841F00D8C0F1 /* Models+Driver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models+Driver.swift"; sourceTree = "<group>"; };
 		C2A38BEF28DB863000D8C0F1 /* ErgastUrls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErgastUrls.swift; sourceTree = "<group>"; };
@@ -80,6 +82,10 @@
 		C2A38C0C28DBE04F00D8C0F1 /* Standing+View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Standing+View.swift"; sourceTree = "<group>"; };
 		C2A38C1328DBE09D00D8C0F1 /* Standing+Assembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Standing+Assembly.swift"; sourceTree = "<group>"; };
 		C2BE3BC128DD4A160057EFFF /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		C2BE3BC328DE11590057EFFF /* Standing+DriverStandingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Standing+DriverStandingCard.swift"; sourceTree = "<group>"; };
+		C2BE3BC528DE2B300057EFFF /* Standing+ConstructorStandingCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Standing+ConstructorStandingCard.swift"; sourceTree = "<group>"; };
+		C2BE3BC728DE2BC50057EFFF /* Interface+ConstructorStanding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Interface+ConstructorStanding.swift"; sourceTree = "<group>"; };
+		C2BE3BC928DE2BEA0057EFFF /* Interface+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Interface+Common.swift"; sourceTree = "<group>"; };
 		C2C4EA8428DD3E4300E9D745 /* Interface+DriverStanding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Interface+DriverStanding.swift"; sourceTree = "<group>"; };
 		C2C4EA8628DD40C900E9D745 /* Models+DriverStanding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models+DriverStanding.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -230,8 +236,9 @@
 			children = (
 				C2A38BEE28DB860900D8C0F1 /* URLS */,
 				C2A38BEB28DB83E300D8C0F1 /* Common */,
-				C2A38BE728DB833100D8C0F1 /* Interface+DriverInterface.swift */,
 				C2C4EA8428DD3E4300E9D745 /* Interface+DriverStanding.swift */,
+				C2BE3BC728DE2BC50057EFFF /* Interface+ConstructorStanding.swift */,
+				C2BE3BC928DE2BEA0057EFFF /* Interface+Common.swift */,
 			);
 			path = Interface;
 			sourceTree = "<group>";
@@ -300,6 +307,8 @@
 			children = (
 				C2A38C0C28DBE04F00D8C0F1 /* Standing+View.swift */,
 				C2A38C0B28DBE04F00D8C0F1 /* Standing+Root.swift */,
+				C2BE3BC528DE2B300057EFFF /* Standing+ConstructorStandingCard.swift */,
+				C2BE3BC328DE11590057EFFF /* Standing+DriverStandingCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -462,14 +471,17 @@
 				C2A38BED28DB841F00D8C0F1 /* Models+Driver.swift in Sources */,
 				C2A38BEA28DB83AB00D8C0F1 /* ErgastInterface.swift in Sources */,
 				C2C4EA8728DD40C900E9D745 /* Models+DriverStanding.swift in Sources */,
+				C2BE3BC428DE11590057EFFF /* Standing+DriverStandingCard.swift in Sources */,
 				C2A38BF028DB863000D8C0F1 /* ErgastUrls.swift in Sources */,
+				C2BE3BC628DE2B300057EFFF /* Standing+ConstructorStandingCard.swift in Sources */,
 				C212FEC228DCBA9000CEAA02 /* Models+Constructor.swift in Sources */,
-				C2A38BE828DB833100D8C0F1 /* Interface+DriverInterface.swift in Sources */,
 				C2C4EA8528DD3E4300E9D745 /* Interface+DriverStanding.swift in Sources */,
 				C2A38BC828DB642400D8C0F1 /* Network.swift in Sources */,
 				C2A38C0F28DBE04F00D8C0F1 /* Standing.swift in Sources */,
 				C2A38BF928DB93D100D8C0F1 /* ViewFactory.swift in Sources */,
+				C2BE3BC828DE2BC50057EFFF /* Interface+ConstructorStanding.swift in Sources */,
 				C2A38C1028DBE04F00D8C0F1 /* Standing+Root.swift in Sources */,
+				C2BE3BCA28DE2BEA0057EFFF /* Interface+Common.swift in Sources */,
 				C2A38C0D28DBE04F00D8C0F1 /* Standing+ViewState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

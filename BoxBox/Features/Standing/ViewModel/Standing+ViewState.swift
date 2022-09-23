@@ -10,7 +10,14 @@ import Foundation
 extension Standing.View.ViewModel {
     enum ViewState {
         case loading
-        case loaded([Models.DriverStandings])
+        case loaded(StandingData)
         case error
+    }
+}
+
+extension Standing.View.ViewModel {
+    struct StandingData {
+        let driver: [Models.DriverStandings]
+        let constructor: [Models.ConstructorStanding]
     }
 }

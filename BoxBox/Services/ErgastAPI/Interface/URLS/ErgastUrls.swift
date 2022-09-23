@@ -23,4 +23,17 @@ class ErgastUrls {
 
         return url
     }
+
+    static func constructorStanding() -> URL {
+        var components = URLComponents()
+        components.scheme = SCHEME
+        components.host = HOST
+        components.path = "/api/f1/current/constructorStandings.json"
+
+        guard let url = components.url else {
+            preconditionFailure("Failed to construct \(#function) url")
+        }
+
+        return url
+    }
 }

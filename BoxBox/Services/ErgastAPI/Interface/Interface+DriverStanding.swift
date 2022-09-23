@@ -8,21 +8,21 @@ import Foundation
 // MARK: - ResponseDriverStandings
 
 struct ResponseDriverStandings: Codable {
-    let mrData: ResponseMRData
+    let mrData: ResponseDriverMRData
 
     enum CodingKeys: String, CodingKey {
         case mrData = "MRData"
     }
 }
 
-// MARK: - ResponseMRData
+// MARK: - ResponseDriverMRData
 
-struct ResponseMRData: Codable {
+struct ResponseDriverMRData: Codable {
     let xmlns: String
     let series: String
     let url: String
     let limit, offset, total: String
-    let standingsTable: ResponseStandingsTable
+    let standingsTable: ResponseDriverStandingsTable
 
     enum CodingKeys: String, CodingKey {
         case xmlns, series, url, limit, offset, total
@@ -30,11 +30,11 @@ struct ResponseMRData: Codable {
     }
 }
 
-// MARK: - ResponseStandingsTable
+// MARK: - ResponseDriverStandingsTable
 
-struct ResponseStandingsTable: Codable {
+struct ResponseDriverStandingsTable: Codable {
     let season: String
-    let standingsLists: [ResponseStandingsList]
+    let standingsLists: [ResponseDriverStandingsList]
 
     enum CodingKeys: String, CodingKey {
         case season
@@ -42,9 +42,9 @@ struct ResponseStandingsTable: Codable {
     }
 }
 
-// MARK: - ResponseStandingsList
+// MARK: - ResponseDriverStandingsList
 
-struct ResponseStandingsList: Codable {
+struct ResponseDriverStandingsList: Codable {
     let season, round: String
     let driverStandings: [ResponseDriverStanding]
 
@@ -66,20 +66,4 @@ struct ResponseDriverStanding: Codable {
         case driver = "Driver"
         case constructors = "Constructors"
     }
-}
-
-// MARK: - ResponseConstructor
-
-struct ResponseConstructor: Codable {
-    let constructorId: String
-    let url: String
-    let name, nationality: String
-}
-
-// MARK: - ResponseDriver
-
-struct ResponseDriver: Codable {
-    let driverId, permanentNumber, code: String
-    let url: String
-    let givenName, familyName, dateOfBirth, nationality: String
 }

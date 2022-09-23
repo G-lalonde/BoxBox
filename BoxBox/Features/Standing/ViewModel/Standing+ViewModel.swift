@@ -23,8 +23,13 @@ extension Standing.View {
         func fetchDriver() async {
             emit(state: .loading)
             do {
-                let constructorStanding = try await api.getDriverStanding()
-                emit(state: .loaded(constructorStanding))
+                let driverStandings = try await api.getDriverStanding()
+                let constructorStandings = try await api.getConstructorStanding()
+
+                emit(state: .loaded(.init(
+                    driver: driverStandings,
+                    constructor: constructorStandings
+                )))
             } catch {
                 emit(state: .error)
             }

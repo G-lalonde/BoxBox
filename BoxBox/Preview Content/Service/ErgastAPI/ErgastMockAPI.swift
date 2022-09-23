@@ -10,11 +10,7 @@ import Foundation
 struct ErgastMockApi: DriverApi {
     let network: Network
 
-    func getDrivers(year: Int) async throws -> [Models.Driver] {
-        return [.mock1, .mock2, .mock3]
-    }
-
-    func getConstructorStandings() async throws -> [Models.ConstructorStanding] {
+    func getDriverStanding() async throws -> [Models.DriverStandings] {
         return [.mock1, .mock2, .mock3]
     }
 }

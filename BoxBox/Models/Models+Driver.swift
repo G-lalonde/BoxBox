@@ -8,7 +8,7 @@
 import Foundation
 
 extension Models {
-    struct Driver {
+    struct Driver: Hashable {
         let driverId: String
         let permanentNumber: String
         let code: String

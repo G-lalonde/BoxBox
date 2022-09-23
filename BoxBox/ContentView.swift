@@ -13,7 +13,7 @@ struct ContentView: View {
     )
 
     var body: some View {
-        viewFactory.makeView(id: .constructor)
+        viewFactory.makeView(id: .standing)
     }
 }
 
@@ -23,6 +23,6 @@ struct ContentView_Previews: PreviewProvider {
     )
 
     static var previews: some View {
-        viewFactory.makeView(id: .example)
+        viewFactory.makeView(id: .standing)
     }
 }

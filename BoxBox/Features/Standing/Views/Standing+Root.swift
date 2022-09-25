@@ -40,6 +40,7 @@ extension Standing.View {
                 .padding(.horizontal, 10)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(Color(hex: "C7C9CB"))
+                .navigationBarTitleDisplayMode(.inline)
                 .navigationTitle("Standings")
             }
         }
@@ -76,9 +77,7 @@ extension Standing.View {
 }
 
 struct StandingRootView_Previews: PreviewProvider {
-    static let viewFactory = ViewFactory.Factory(
-        assembly: ViewFactory.Assembly.ForPreview()
-    )
+    static let viewFactory = ViewFactory.Factory(assembly: Assemblies.forPreview)
 
     static var previews: some View {
         viewFactory.makeView(id: .standing)

@@ -13,11 +13,14 @@ struct ViewFactory {
     }
 }
 
+protocol ViewFactoryAssembly {
+    func makeStandingView(viewFactory: ViewFactory.Factory) -> Standing.View.Root
+}
+
 extension ViewFactory {
     struct Factory {
         let assembly: ViewFactoryAssembly
 
-        
         @ViewBuilder
         func makeView(id: ViewId) -> some View {
             switch id {
@@ -25,16 +28,5 @@ extension ViewFactory {
                     assembly.makeStandingView(viewFactory: self)
             }
         }
-    }
-}
-
-protocol ViewFactoryAssembly {
-     func makeStandingView(viewFactory: ViewFactory.Factory) -> Standing.View.Root
-}
-
-extension ViewFactory {
-    enum Assembly {
-        struct ForRuntime: ViewFactoryAssembly {}
-        struct ForPreview: ViewFactoryAssembly {}
     }
 }

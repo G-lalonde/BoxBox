@@ -37,15 +37,15 @@ struct DriverStandingCard: View {
                     .minimumScaleFactor(0.01)
                     .frame(width: 40)
 
-                Circle()
-                    .fill(
-                        LinearGradient(
-                            colors: [Color(hex: "373E45"), Color(hex: "373E45").opacity(0.1)],
-                            startPoint: .leading,
-                            endPoint: .trailing
-                        )
-                    )
-                    .frame(width: 50, height: 50, alignment: .center)
+//                Circle()
+//                    .fill(
+//                        LinearGradient(
+//                            colors: [Color(hex: "373E45"), Color(hex: "373E45").opacity(0.1)],
+//                            startPoint: .leading,
+//                            endPoint: .trailing
+//                        )
+//                    )
+//                    .frame(width: 50, height: 50, alignment: .center)
 
                 VStack(alignment: .leading, spacing: 5) {
                     Text("\(standing.driver.givenName) \(standing.driver.familyName)")
@@ -64,7 +64,8 @@ struct DriverStandingCard: View {
                 Spacer()
             }
         }
-        .padding()
+        .padding(.horizontal)
+        .padding(.vertical, 8)
         .background(.white)
         .cornerRadius(12)
     }

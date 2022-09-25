@@ -9,8 +9,9 @@
 /* Begin PBXBuildFile section */
 		C212FEC228DCBA9000CEAA02 /* Models+Constructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C212FEC128DCBA9000CEAA02 /* Models+Constructor.swift */; };
 		C212FED228DCBDD400CEAA02 /* Models+Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C212FED128DCBDD400CEAA02 /* Models+Models.swift */; };
+		C2683D1728E0BA1D00725F68 /* Common+ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2683D1628E0BA1D00725F68 /* Common+ViewFactory.swift */; };
 		C2A38B9928DB636700D8C0F1 /* BoxBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38B9828DB636700D8C0F1 /* BoxBoxApp.swift */; };
-		C2A38B9B28DB636700D8C0F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38B9A28DB636700D8C0F1 /* ContentView.swift */; };
+		C2A38B9B28DB636700D8C0F1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38B9A28DB636700D8C0F1 /* HomeView.swift */; };
 		C2A38B9D28DB636B00D8C0F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2A38B9C28DB636B00D8C0F1 /* Assets.xcassets */; };
 		C2A38BA028DB636B00D8C0F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2A38B9F28DB636B00D8C0F1 /* Preview Assets.xcassets */; };
 		C2A38BAA28DB636C00D8C0F1 /* BoxBoxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38BA928DB636C00D8C0F1 /* BoxBoxTests.swift */; };
@@ -58,9 +59,10 @@
 /* Begin PBXFileReference section */
 		C212FEC128DCBA9000CEAA02 /* Models+Constructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models+Constructor.swift"; sourceTree = "<group>"; };
 		C212FED128DCBDD400CEAA02 /* Models+Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models+Models.swift"; sourceTree = "<group>"; };
+		C2683D1628E0BA1D00725F68 /* Common+ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Common+ViewFactory.swift"; sourceTree = "<group>"; };
 		C2A38B9528DB636700D8C0F1 /* BoxBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoxBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2A38B9828DB636700D8C0F1 /* BoxBoxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxBoxApp.swift; sourceTree = "<group>"; };
-		C2A38B9A28DB636700D8C0F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C2A38B9A28DB636700D8C0F1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C2A38B9C28DB636B00D8C0F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2A38B9F28DB636B00D8C0F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C2A38BA528DB636C00D8C0F1 /* BoxBoxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoxBoxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,7 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				C2A38B9828DB636700D8C0F1 /* BoxBoxApp.swift */,
-				C2A38B9A28DB636700D8C0F1 /* ContentView.swift */,
+				C2A38B9A28DB636700D8C0F1 /* HomeView.swift */,
 				C2A38BC528DB63E600D8C0F1 /* DependencyInjection */,
 				C2A38BC328DB63C900D8C0F1 /* Features */,
 				C2A38BC428DB63D900D8C0F1 /* Models */,
@@ -209,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				C2A38BF828DB93D100D8C0F1 /* ViewFactory.swift */,
+				C2683D1628E0BA1D00725F68 /* Common+ViewFactory.swift */,
 				C2A38C1228DBE09D00D8C0F1 /* Standing */,
 			);
 			path = DependencyInjection;
@@ -460,13 +463,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2A38C1428DBE09D00D8C0F1 /* Standing+Assembly.swift in Sources */,
-				C2A38B9B28DB636700D8C0F1 /* ContentView.swift in Sources */,
+				C2A38B9B28DB636700D8C0F1 /* HomeView.swift in Sources */,
 				C2A38BE528DB827100D8C0F1 /* ErgastAPI.swift in Sources */,
 				C212FED228DCBDD400CEAA02 /* Models+Models.swift in Sources */,
 				C2A38C0E28DBE04F00D8C0F1 /* Standing+ViewModel.swift in Sources */,
 				C2BE3BC228DD4A160057EFFF /* Color.swift in Sources */,
 				C2A38C1128DBE04F00D8C0F1 /* Standing+View.swift in Sources */,
 				C2A38BF428DB906D00D8C0F1 /* ErgastMockAPI.swift in Sources */,
+				C2683D1728E0BA1D00725F68 /* Common+ViewFactory.swift in Sources */,
 				C2A38B9928DB636700D8C0F1 /* BoxBoxApp.swift in Sources */,
 				C2A38BED28DB841F00D8C0F1 /* Models+Driver.swift in Sources */,
 				C2A38BEA28DB83AB00D8C0F1 /* ErgastInterface.swift in Sources */,

@@ -17,4 +17,8 @@ struct ErgastMockApi: DriverApi {
     func getConstructorStanding() async throws -> [Models.ConstructorStanding] {
         return [.mock1, .mock2, .mock3]
     }
+
+    func getCurrentSchedule() async throws -> [Models.Schedule] {
+        return [.mock1, .mock2, .mock3]
+    }
 }

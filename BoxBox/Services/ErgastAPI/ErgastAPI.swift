@@ -10,6 +10,7 @@ import Foundation
 protocol DriverApi {
     func getDriverStanding() async throws -> [Models.DriverStandings]
     func getConstructorStanding() async throws -> [Models.ConstructorStanding]
+    func getCurrentSchedule() async throws -> [Models.Schedule]
 }
 
 struct ErgastApi: DriverApi {
@@ -75,6 +76,57 @@ struct ErgastApi: DriverApi {
                         url: standing.constructor.url,
                         name: standing.constructor.name,
                         nationality: standing.constructor.nationality
+                    )
+                )
+            }
+    }
+
+    func getCurrentSchedule() async throws -> [Models.Schedule] {
+        let url = ErgastUrls.currentSchedule()
+
+        let response: ResponseCurrentSchedule = try await network
+            .requestAsync(for: url)
+
+        return response
+            .mrData
+            .raceTable
+            .races
+            .map { race in
+                Models.Schedule(
+                    season: race.season,
+                    round: race.round,
+                    url: race.url,
+                    raceName: race.raceName,
+                    circuit: Models.Circuit(
+                        circuitId: race.circuit.circuitId,
+                        url: race.circuit.url,
+                        circuitName: race.circuit.circuitName,
+                        location: Models.Location(
+                            lat: race.circuit.location.lat,
+                            long: race.circuit.location.long,
+                            locality: race.circuit.location.locality,
+                            country: race.circuit.location.country
+                        )
+                    ),
+                    raceTime: Models.RaceTime(
+                        date: race.date,
+                        time: race.time
+                    ),
+                    fp1: Models.RaceTime(
+                        date: race.firstPractice.date,
+                        time: race.firstPractice.time
+                    ),
+                    fp2: Models.RaceTime(
+                        date: race.secondPractice.date,
+                        time: race.secondPractice.time
+                    ),
+                    fp3: Models.RaceTime(
+                        date: race.thirdPractice?.date,
+                        time: race.thirdPractice?.time
+                    ),
+                    quali: Models.RaceTime(
+                        date: race.qualifying.date,
+                        time: race.qualifying.time
                     )
                 )
             }

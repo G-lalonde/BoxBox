@@ -10,13 +10,7 @@ import Foundation
 extension Calendar.View.ViewModel {
     enum ViewState {
         case loading
-        case loaded(CalendarData)
+        case loaded([Models.Schedule])
         case error
-    }
-}
-
-extension Calendar.View.ViewModel {
-    struct CalendarData {
-        let data: String
     }
 }

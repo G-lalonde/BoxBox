@@ -22,10 +22,10 @@ extension Calendar.View {
 
         func fetchCalendar() async {
             emit(state: .loading)
+
             do {
-                emit(state: .loaded(.init(
-                    data: "Calendar"
-                )))
+                let schedules = try await api.getCurrentSchedule()
+                emit(state: .loaded(schedules))
             } catch {
                 emit(state: .error)
             }

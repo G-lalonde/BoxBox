@@ -36,4 +36,17 @@ class ErgastUrls {
 
         return url
     }
+
+    static func currentSchedule() -> URL {
+        var components = URLComponents()
+        components.scheme = SCHEME
+        components.host = HOST
+        components.path = "/api/f1/current.json"
+
+        guard let url = components.url else {
+            preconditionFailure("Failed to construct \(#function) url")
+        }
+
+        return url
+    }
 }

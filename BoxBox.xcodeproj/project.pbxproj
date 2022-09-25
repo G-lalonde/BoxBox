@@ -16,6 +16,11 @@
 		C2683D2728E0BDD500725F68 /* Calendar+Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2683D2028E0BDD500725F68 /* Calendar+Root.swift */; };
 		C2683D2928E0BDD500725F68 /* Calendar+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2683D2228E0BDD500725F68 /* Calendar+View.swift */; };
 		C2683D2C28E0BEFE00725F68 /* Calendar+Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2683D2B28E0BEFE00725F68 /* Calendar+Assembly.swift */; };
+		C2683D2E28E0C07400725F68 /* Interface+CurrentSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2683D2D28E0C07400725F68 /* Interface+CurrentSchedule.swift */; };
+		C2683D3028E0C12100725F68 /* Models+Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2683D2F28E0C12100725F68 /* Models+Schedule.swift */; };
+		C2683D3228E0C23300725F68 /* Models+RaceTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2683D3128E0C23300725F68 /* Models+RaceTime.swift */; };
+		C2683D3428E0C24400725F68 /* Models+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2683D3328E0C24400725F68 /* Models+Location.swift */; };
+		C2683D3628E0C25200725F68 /* Models+Circuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2683D3528E0C25200725F68 /* Models+Circuit.swift */; };
 		C2A38B9928DB636700D8C0F1 /* BoxBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38B9828DB636700D8C0F1 /* BoxBoxApp.swift */; };
 		C2A38B9B28DB636700D8C0F1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38B9A28DB636700D8C0F1 /* HomeView.swift */; };
 		C2A38B9D28DB636B00D8C0F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2A38B9C28DB636B00D8C0F1 /* Assets.xcassets */; };
@@ -72,6 +77,11 @@
 		C2683D2028E0BDD500725F68 /* Calendar+Root.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Calendar+Root.swift"; sourceTree = "<group>"; };
 		C2683D2228E0BDD500725F68 /* Calendar+View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Calendar+View.swift"; sourceTree = "<group>"; };
 		C2683D2B28E0BEFE00725F68 /* Calendar+Assembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+Assembly.swift"; sourceTree = "<group>"; };
+		C2683D2D28E0C07400725F68 /* Interface+CurrentSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Interface+CurrentSchedule.swift"; sourceTree = "<group>"; };
+		C2683D2F28E0C12100725F68 /* Models+Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models+Schedule.swift"; sourceTree = "<group>"; };
+		C2683D3128E0C23300725F68 /* Models+RaceTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models+RaceTime.swift"; sourceTree = "<group>"; };
+		C2683D3328E0C24400725F68 /* Models+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models+Location.swift"; sourceTree = "<group>"; };
+		C2683D3528E0C25200725F68 /* Models+Circuit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models+Circuit.swift"; sourceTree = "<group>"; };
 		C2A38B9528DB636700D8C0F1 /* BoxBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoxBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2A38B9828DB636700D8C0F1 /* BoxBoxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxBoxApp.swift; sourceTree = "<group>"; };
 		C2A38B9A28DB636700D8C0F1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -260,6 +270,10 @@
 				C212FEC128DCBA9000CEAA02 /* Models+Constructor.swift */,
 				C212FED128DCBDD400CEAA02 /* Models+Models.swift */,
 				C2C4EA8628DD40C900E9D745 /* Models+DriverStanding.swift */,
+				C2683D2F28E0C12100725F68 /* Models+Schedule.swift */,
+				C2683D3128E0C23300725F68 /* Models+RaceTime.swift */,
+				C2683D3328E0C24400725F68 /* Models+Location.swift */,
+				C2683D3528E0C25200725F68 /* Models+Circuit.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -300,6 +314,7 @@
 				C2C4EA8428DD3E4300E9D745 /* Interface+DriverStanding.swift */,
 				C2BE3BC728DE2BC50057EFFF /* Interface+ConstructorStanding.swift */,
 				C2BE3BC928DE2BEA0057EFFF /* Interface+Common.swift */,
+				C2683D2D28E0C07400725F68 /* Interface+CurrentSchedule.swift */,
 			);
 			path = Interface;
 			sourceTree = "<group>";
@@ -526,18 +541,22 @@
 				C212FED228DCBDD400CEAA02 /* Models+Models.swift in Sources */,
 				C2683D2C28E0BEFE00725F68 /* Calendar+Assembly.swift in Sources */,
 				C2A38C0E28DBE04F00D8C0F1 /* Standing+ViewModel.swift in Sources */,
+				C2683D2E28E0C07400725F68 /* Interface+CurrentSchedule.swift in Sources */,
 				C2683D2528E0BDD500725F68 /* Calendar.swift in Sources */,
+				C2683D3028E0C12100725F68 /* Models+Schedule.swift in Sources */,
 				C2BE3BC228DD4A160057EFFF /* Color.swift in Sources */,
 				C2A38C1128DBE04F00D8C0F1 /* Standing+View.swift in Sources */,
 				C2A38BF428DB906D00D8C0F1 /* ErgastMockAPI.swift in Sources */,
 				C2683D1728E0BA1D00725F68 /* Common+ViewFactory.swift in Sources */,
 				C2A38B9928DB636700D8C0F1 /* BoxBoxApp.swift in Sources */,
 				C2683D2928E0BDD500725F68 /* Calendar+View.swift in Sources */,
+				C2683D3428E0C24400725F68 /* Models+Location.swift in Sources */,
 				C2683D2328E0BDD500725F68 /* Calendar+ViewModel.swift in Sources */,
 				C2A38BED28DB841F00D8C0F1 /* Models+Driver.swift in Sources */,
 				C2683D2728E0BDD500725F68 /* Calendar+Root.swift in Sources */,
 				C2A38BEA28DB83AB00D8C0F1 /* ErgastInterface.swift in Sources */,
 				C2C4EA8728DD40C900E9D745 /* Models+DriverStanding.swift in Sources */,
+				C2683D3628E0C25200725F68 /* Models+Circuit.swift in Sources */,
 				C2BE3BC428DE11590057EFFF /* Standing+DriverStandingCard.swift in Sources */,
 				C2A38BF028DB863000D8C0F1 /* ErgastUrls.swift in Sources */,
 				C2BE3BC628DE2B300057EFFF /* Standing+ConstructorStandingCard.swift in Sources */,
@@ -545,6 +564,7 @@
 				C2C4EA8528DD3E4300E9D745 /* Interface+DriverStanding.swift in Sources */,
 				C2A38BC828DB642400D8C0F1 /* Network.swift in Sources */,
 				C2683D2428E0BDD500725F68 /* Calendar+ViewState.swift in Sources */,
+				C2683D3228E0C23300725F68 /* Models+RaceTime.swift in Sources */,
 				C2A38C0F28DBE04F00D8C0F1 /* Standing.swift in Sources */,
 				C2A38BF928DB93D100D8C0F1 /* ViewFactory.swift in Sources */,
 				C2BE3BC828DE2BC50057EFFF /* Interface+ConstructorStanding.swift in Sources */,

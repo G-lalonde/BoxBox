@@ -31,8 +31,8 @@ extension Calendar.View {
             switch state {
                 case .loading:
                     loadingView()
-                case let .loaded(drivers):
-                    loadedView(calendar: drivers)
+                case let .loaded(schedule):
+                    loadedView(calendar: schedule)
                 case .error:
                     loadingView()
             }
@@ -43,8 +43,10 @@ extension Calendar.View {
                 .padding()
         }
 
-        func loadedView(calendar: Calendar.View.ViewModel.CalendarData) -> some View {
-            Text(calendar.data)
+        func loadedView(calendar: [Models.Schedule]) -> some View {
+            ForEach(calendar, id: \.self) { race in
+                Text(race.raceName)
+            }
         }
     }
 }

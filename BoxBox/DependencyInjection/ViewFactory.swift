@@ -10,11 +10,13 @@ import SwiftUI
 struct ViewFactory {
     enum ViewId {
         case standing
+        case calendar
     }
 }
 
 protocol ViewFactoryAssembly {
     func makeStandingView(viewFactory: ViewFactory.Factory) -> Standing.View.Root
+    func makeCalendarView(viewFactory: ViewFactory.Factory) -> Calendar.View.Root
 }
 
 extension ViewFactory {
@@ -26,6 +28,8 @@ extension ViewFactory {
             switch id {
                 case .standing:
                     assembly.makeStandingView(viewFactory: self)
+                case .calendar:
+                    assembly.makeCalendarView(viewFactory: self)
             }
         }
     }

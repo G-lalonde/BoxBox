@@ -40,7 +40,6 @@ extension Standing.View {
                 .padding(.horizontal, 10)
                 .frame(maxWidth: .infinity, maxHeight: .infinity)
                 .background(Color(hex: "C7C9CB"))
-                .navigationBarTitleDisplayMode(.inline)
                 .navigationTitle("Standings")
             }
         }

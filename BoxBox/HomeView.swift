@@ -14,12 +14,12 @@ struct HomeView: View {
         TabView {
             viewFactory.makeView(id: .standing)
                 .tabItem {
-                    Label("Menu", systemImage: "list.dash")
+                    Label("Standings", systemImage: "flag.filled.and.flag.crossed")
                 }
 
-            viewFactory.makeView(id: .standing)
+            viewFactory.makeView(id: .calendar)
                 .tabItem {
-                    Label("Order", systemImage: "square.and.pencil")
+                    Label("Calendar", systemImage: "calendar")
                 }
         }
     }

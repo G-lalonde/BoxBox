@@ -17,7 +17,8 @@ extension Models {
         let raceTime: RaceTime
         let fp1: RaceTime
         let fp2: RaceTime
-        let fp3: RaceTime
+        let fp3: RaceTime?
+        let sprint: RaceTime?
         let quali: RaceTime
     }
 }
@@ -33,6 +34,7 @@ extension Models.Schedule {
         fp1: .mock1,
         fp2: .mock1,
         fp3: .mock1,
+        sprint: nil,
         quali: .mock1
     )
 
@@ -46,6 +48,7 @@ extension Models.Schedule {
         fp1: .mock2,
         fp2: .mock2,
         fp3: .mock2,
+        sprint: nil,
         quali: .mock2
     )
 
@@ -54,11 +57,12 @@ extension Models.Schedule {
         round: "5",
         url: "http://en.wikipedia.org/wiki/2022_Miami_Grand_Prix",
         raceName: "Miami Grand Prix",
-        circuit: .mock2,
-        raceTime: .mock2,
-        fp1: .mock2,
-        fp2: .mock2,
-        fp3: .mock2,
-        quali: .mock2
+        circuit: .mock3,
+        raceTime: .mock3,
+        fp1: .mock3,
+        fp2: .mock3,
+        fp3: nil,
+        sprint: .mock3,
+        quali: .mock3
     )
 }

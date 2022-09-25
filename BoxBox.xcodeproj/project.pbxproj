@@ -22,6 +22,8 @@
 		C2683D3428E0C24400725F68 /* Models+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2683D3328E0C24400725F68 /* Models+Location.swift */; };
 		C2683D3628E0C25200725F68 /* Models+Circuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2683D3528E0C25200725F68 /* Models+Circuit.swift */; };
 		C2683D3928E10C4600725F68 /* Emitable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2683D3828E10C4600725F68 /* Emitable.swift */; };
+		C2683D3B28E10D8100725F68 /* Calendar+ScheduleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2683D3A28E10D8100725F68 /* Calendar+ScheduleCard.swift */; };
+		C2683D3D28E1144400725F68 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2683D3C28E1144400725F68 /* Date.swift */; };
 		C2A38B9928DB636700D8C0F1 /* BoxBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38B9828DB636700D8C0F1 /* BoxBoxApp.swift */; };
 		C2A38B9B28DB636700D8C0F1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38B9A28DB636700D8C0F1 /* HomeView.swift */; };
 		C2A38B9D28DB636B00D8C0F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2A38B9C28DB636B00D8C0F1 /* Assets.xcassets */; };
@@ -84,6 +86,8 @@
 		C2683D3328E0C24400725F68 /* Models+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models+Location.swift"; sourceTree = "<group>"; };
 		C2683D3528E0C25200725F68 /* Models+Circuit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models+Circuit.swift"; sourceTree = "<group>"; };
 		C2683D3828E10C4600725F68 /* Emitable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emitable.swift; sourceTree = "<group>"; };
+		C2683D3A28E10D8100725F68 /* Calendar+ScheduleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+ScheduleCard.swift"; sourceTree = "<group>"; };
+		C2683D3C28E1144400725F68 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		C2A38B9528DB636700D8C0F1 /* BoxBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoxBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2A38B9828DB636700D8C0F1 /* BoxBoxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxBoxApp.swift; sourceTree = "<group>"; };
 		C2A38B9A28DB636700D8C0F1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -173,6 +177,7 @@
 			children = (
 				C2683D2028E0BDD500725F68 /* Calendar+Root.swift */,
 				C2683D2228E0BDD500725F68 /* Calendar+View.swift */,
+				C2683D3A28E10D8100725F68 /* Calendar+ScheduleCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -412,6 +417,7 @@
 			isa = PBXGroup;
 			children = (
 				C2BE3BC128DD4A160057EFFF /* Color.swift */,
+				C2683D3C28E1144400725F68 /* Date.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -556,6 +562,7 @@
 				C2683D2528E0BDD500725F68 /* Calendar.swift in Sources */,
 				C2683D3028E0C12100725F68 /* Models+Schedule.swift in Sources */,
 				C2BE3BC228DD4A160057EFFF /* Color.swift in Sources */,
+				C2683D3B28E10D8100725F68 /* Calendar+ScheduleCard.swift in Sources */,
 				C2A38C1128DBE04F00D8C0F1 /* Standing+View.swift in Sources */,
 				C2A38BF428DB906D00D8C0F1 /* ErgastMockAPI.swift in Sources */,
 				C2683D1728E0BA1D00725F68 /* Common+ViewFactory.swift in Sources */,
@@ -582,6 +589,7 @@
 				C2BE3BC828DE2BC50057EFFF /* Interface+ConstructorStanding.swift in Sources */,
 				C2A38C1028DBE04F00D8C0F1 /* Standing+Root.swift in Sources */,
 				C2BE3BCA28DE2BEA0057EFFF /* Interface+Common.swift in Sources */,
+				C2683D3D28E1144400725F68 /* Date.swift in Sources */,
 				C2A38C0D28DBE04F00D8C0F1 /* Standing+ViewState.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

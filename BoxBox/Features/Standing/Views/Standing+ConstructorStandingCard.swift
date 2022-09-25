@@ -7,35 +7,36 @@
 
 import SwiftUI
 
-struct ConstructorStandingCard: View {
-    let standing: Models.ConstructorStanding
+extension Standing.View {
+    struct ConstructorStandingCard: View {
+        let standing: Models.ConstructorStanding
 
-    var body: some View {
-        ZStack {
-            HStack {
-                Spacer()
-                VStack(alignment: .trailing) {
-                    Text(standing.points)
-                        .font(.title)
-                        .bold()
-                        .italic()
-                        .foregroundColor(Color(hex: "C7C9CB"))
-                    Text("pts.")
-                        .bold()
-                        .italic()
-                        .font(.caption)
-                        .foregroundColor(Color(hex: "C7C9CB"))
+        var body: some View {
+            ZStack {
+                HStack {
+                    Spacer()
+                    VStack(alignment: .trailing) {
+                        Text(standing.points)
+                            .font(.title)
+                            .bold()
+                            .italic()
+                            .foregroundColor(Color(hex: "C7C9CB"))
+                        Text("pts.")
+                            .bold()
+                            .italic()
+                            .font(.caption)
+                            .foregroundColor(Color(hex: "C7C9CB"))
+                    }
                 }
-            }
 
-            HStack(spacing: 15) {
-                Text(standing.positionText)
-                    .font(.title)
-                    .italic()
-                    .bold()
-                    .foregroundColor(Color(hex: "343D42"))
-                    .minimumScaleFactor(0.01)
-                    .frame(width: 40)
+                HStack(spacing: 15) {
+                    Text(standing.positionText)
+                        .font(.title)
+                        .italic()
+                        .bold()
+                        .foregroundColor(Color(hex: "343D42"))
+                        .minimumScaleFactor(0.01)
+                        .frame(width: 40)
 
 //                Circle()
 //                    .fill(
@@ -48,29 +49,30 @@ struct ConstructorStandingCard: View {
 //                    .frame(width: 50, height: 50, alignment: .center)
 //                    .shadow(radius: 2)
 
-                VStack(alignment: .leading, spacing: 5) {
-                    Text(standing.constructor.name)
-                        .font(.body)
-                        .bold()
-                        .lineLimit(1)
+                    VStack(alignment: .leading, spacing: 5) {
+                        Text(standing.constructor.name)
+                            .font(.body)
+                            .bold()
+                            .lineLimit(1)
 
-                    Rectangle()
-                        .fill(standing.constructor.color)
-                        .frame(width: 80, height: 8, alignment: .leading)
+                        Rectangle()
+                            .fill(standing.constructor.color)
+                            .frame(width: 80, height: 8, alignment: .leading)
+                    }
+                    Spacer()
                 }
-                Spacer()
             }
+            .padding(.horizontal)
+            .padding(.vertical, 8)
+            .background(.white)
+            .cornerRadius(12)
         }
-        .padding(.horizontal)
-        .padding(.vertical, 8)
-        .background(.white)
-        .cornerRadius(12)
     }
 }
 
 struct Standing_ConstructorStandingCard_Previews: PreviewProvider {
     static var previews: some View {
-        ConstructorStandingCard(standing: .mock1)
+        Standing.View.ConstructorStandingCard(standing: .mock1)
             .padding()
             .background(.gray)
             .previewLayout(.sizeThatFits)

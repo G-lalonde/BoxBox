@@ -45,7 +45,7 @@ extension Calendar.View {
 
         func loadedView(calendar: [Models.Schedule]) -> some View {
             ForEach(calendar, id: \.self) { race in
-                Text(race.raceName)
+                ScheduleCard(race: race)
             }
         }
     }

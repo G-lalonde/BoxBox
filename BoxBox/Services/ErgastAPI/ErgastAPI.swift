@@ -120,10 +120,18 @@ struct ErgastApi: DriverApi {
                         date: race.secondPractice.date,
                         time: race.secondPractice.time
                     ),
-                    fp3: Models.RaceTime(
-                        date: race.thirdPractice?.date,
-                        time: race.thirdPractice?.time
-                    ),
+                    fp3: race.thirdPractice != nil
+                        ? Models.RaceTime(
+                            date: race.thirdPractice!.date,
+                            time: race.thirdPractice!.time
+                        )
+                        : nil,
+                    sprint: race.sprint != nil
+                        ? Models.RaceTime(
+                            date: race.sprint!.date,
+                            time: race.sprint!.time
+                        )
+                        : nil,
                     quali: Models.RaceTime(
                         date: race.qualifying.date,
                         time: race.qualifying.time

@@ -21,6 +21,7 @@
 		C2683D3228E0C23300725F68 /* Models+RaceTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2683D3128E0C23300725F68 /* Models+RaceTime.swift */; };
 		C2683D3428E0C24400725F68 /* Models+Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2683D3328E0C24400725F68 /* Models+Location.swift */; };
 		C2683D3628E0C25200725F68 /* Models+Circuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2683D3528E0C25200725F68 /* Models+Circuit.swift */; };
+		C2683D3928E10C4600725F68 /* Emitable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2683D3828E10C4600725F68 /* Emitable.swift */; };
 		C2A38B9928DB636700D8C0F1 /* BoxBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38B9828DB636700D8C0F1 /* BoxBoxApp.swift */; };
 		C2A38B9B28DB636700D8C0F1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38B9A28DB636700D8C0F1 /* HomeView.swift */; };
 		C2A38B9D28DB636B00D8C0F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2A38B9C28DB636B00D8C0F1 /* Assets.xcassets */; };
@@ -82,6 +83,7 @@
 		C2683D3128E0C23300725F68 /* Models+RaceTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models+RaceTime.swift"; sourceTree = "<group>"; };
 		C2683D3328E0C24400725F68 /* Models+Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models+Location.swift"; sourceTree = "<group>"; };
 		C2683D3528E0C25200725F68 /* Models+Circuit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models+Circuit.swift"; sourceTree = "<group>"; };
+		C2683D3828E10C4600725F68 /* Emitable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emitable.swift; sourceTree = "<group>"; };
 		C2A38B9528DB636700D8C0F1 /* BoxBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoxBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2A38B9828DB636700D8C0F1 /* BoxBoxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxBoxApp.swift; sourceTree = "<group>"; };
 		C2A38B9A28DB636700D8C0F1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -183,6 +185,14 @@
 			path = Calendar;
 			sourceTree = "<group>";
 		};
+		C2683D3728E10C3500725F68 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C2683D3828E10C4600725F68 /* Emitable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		C2A38B8C28DB636700D8C0F1 = {
 			isa = PBXGroup;
 			children = (
@@ -212,6 +222,7 @@
 				C2A38BC328DB63C900D8C0F1 /* Features */,
 				C2A38BC428DB63D900D8C0F1 /* Models */,
 				C2A38BC228DB63BE00D8C0F1 /* Services */,
+				C2683D3728E10C3500725F68 /* Protocols */,
 				C2BE3BC028DD4A070057EFFF /* Extensions */,
 				C2A38B9C28DB636B00D8C0F1 /* Assets.xcassets */,
 				C2A38B9E28DB636B00D8C0F1 /* Preview Content */,
@@ -556,6 +567,7 @@
 				C2683D2728E0BDD500725F68 /* Calendar+Root.swift in Sources */,
 				C2A38BEA28DB83AB00D8C0F1 /* ErgastInterface.swift in Sources */,
 				C2C4EA8728DD40C900E9D745 /* Models+DriverStanding.swift in Sources */,
+				C2683D3928E10C4600725F68 /* Emitable.swift in Sources */,
 				C2683D3628E0C25200725F68 /* Models+Circuit.swift in Sources */,
 				C2BE3BC428DE11590057EFFF /* Standing+DriverStandingCard.swift in Sources */,
 				C2A38BF028DB863000D8C0F1 /* ErgastUrls.swift in Sources */,

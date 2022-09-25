@@ -8,7 +8,7 @@
 import SwiftUI
 
 extension Standing.View {
-    final class ViewModel: ObservableObject {
+    final class ViewModel: ObservableObject, Emitable {
         @Published public internal(set) var state: Standing.View.ViewModel.ViewState
 
         let network: Network
@@ -32,14 +32,6 @@ extension Standing.View {
                 )))
             } catch {
                 emit(state: .error)
-            }
-        }
-
-        func emit(state: Standing.View.ViewModel.ViewState) {
-            DispatchQueue.main.async {
-                withAnimation {
-                    self.state = state
-                }
             }
         }
     }

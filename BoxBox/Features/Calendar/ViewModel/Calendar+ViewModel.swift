@@ -8,7 +8,7 @@
 import SwiftUI
 
 extension Calendar.View {
-    final class ViewModel: ObservableObject {
+    final class ViewModel: ObservableObject, Emitable {
         @Published public internal(set) var state: Calendar.View.ViewModel.ViewState
 
         let network: Network
@@ -28,14 +28,6 @@ extension Calendar.View {
                 emit(state: .loaded(schedules))
             } catch {
                 emit(state: .error)
-            }
-        }
-
-        func emit(state: Calendar.View.ViewModel.ViewState) {
-            DispatchQueue.main.async {
-                withAnimation {
-                    self.state = state
-                }
             }
         }
     }

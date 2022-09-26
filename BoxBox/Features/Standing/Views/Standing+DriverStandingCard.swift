@@ -48,8 +48,10 @@ extension Standing.View {
                             .bold()
                             .foregroundColor(.white)
                             .padding(.horizontal, 12)
-                            .background(standing.constructors.color)
-                            .cornerRadius(12)
+                            .background(
+                                Capsule()
+                                    .fill(standing.constructors.color)
+                            )
                     }
                     Spacer()
                 }

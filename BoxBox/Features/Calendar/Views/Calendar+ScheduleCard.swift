@@ -39,8 +39,10 @@ extension Calendar.View {
                                 .bold()
                                 .foregroundColor(.white)
                                 .padding(.horizontal, 12)
-                                .background(.red)
-                                .cornerRadius(12)
+                                .background(
+                                    Capsule()
+                                        .fill(.red)
+                                )
                         }
                     }
 

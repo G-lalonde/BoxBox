@@ -19,7 +19,7 @@ extension RaceDetails.View {
             .padding(.horizontal, 10)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .background(Color(hex: "C7C9CB"))
-            .navigationTitle("RaceDetails")
+            .navigationTitle(viewModel.race.name)
         }
 
         @ViewBuilder func makeView(
@@ -50,6 +50,8 @@ struct RaceDetailsRootView_Previews: PreviewProvider {
     static let viewFactory = ViewFactory.Factory(assembly: Assemblies.forPreview)
 
     static var previews: some View {
-        viewFactory.makeView(id: .raceDetails(.mock1))
+        NavigationView {
+            viewFactory.makeView(id: .raceDetails(.mock1))
+        }
     }
 }

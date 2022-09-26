@@ -57,6 +57,13 @@
 		C2BE3BCA28DE2BEA0057EFFF /* Interface+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BE3BC928DE2BEA0057EFFF /* Interface+Common.swift */; };
 		C2C4EA8528DD3E4300E9D745 /* Interface+DriverStanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4EA8428DD3E4300E9D745 /* Interface+DriverStanding.swift */; };
 		C2C4EA8728DD40C900E9D745 /* Models+DriverStanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C4EA8628DD40C900E9D745 /* Models+DriverStanding.swift */; };
+		C2F4DEF628E22573001A0F9E /* Models+MockSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F4DEEE28E22573001A0F9E /* Models+MockSchedule.swift */; };
+		C2F4DEF728E22573001A0F9E /* Models+MockConstructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F4DEEF28E22573001A0F9E /* Models+MockConstructor.swift */; };
+		C2F4DEF828E22573001A0F9E /* Models+MockDriver.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F4DEF028E22573001A0F9E /* Models+MockDriver.swift */; };
+		C2F4DEF928E22573001A0F9E /* Models+MockCircuit.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F4DEF128E22573001A0F9E /* Models+MockCircuit.swift */; };
+		C2F4DEFA28E22573001A0F9E /* Models+MockLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F4DEF228E22573001A0F9E /* Models+MockLocation.swift */; };
+		C2F4DEFC28E22573001A0F9E /* Models+MockDriverStanding.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F4DEF428E22573001A0F9E /* Models+MockDriverStanding.swift */; };
+		C2F4DEFD28E22573001A0F9E /* Models+MockRaceTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F4DEF528E22573001A0F9E /* Models+MockRaceTime.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +137,13 @@
 		C2BE3BC928DE2BEA0057EFFF /* Interface+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Interface+Common.swift"; sourceTree = "<group>"; };
 		C2C4EA8428DD3E4300E9D745 /* Interface+DriverStanding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Interface+DriverStanding.swift"; sourceTree = "<group>"; };
 		C2C4EA8628DD40C900E9D745 /* Models+DriverStanding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models+DriverStanding.swift"; sourceTree = "<group>"; };
+		C2F4DEEE28E22573001A0F9E /* Models+MockSchedule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Models+MockSchedule.swift"; sourceTree = "<group>"; };
+		C2F4DEEF28E22573001A0F9E /* Models+MockConstructor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Models+MockConstructor.swift"; sourceTree = "<group>"; };
+		C2F4DEF028E22573001A0F9E /* Models+MockDriver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Models+MockDriver.swift"; sourceTree = "<group>"; };
+		C2F4DEF128E22573001A0F9E /* Models+MockCircuit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Models+MockCircuit.swift"; sourceTree = "<group>"; };
+		C2F4DEF228E22573001A0F9E /* Models+MockLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Models+MockLocation.swift"; sourceTree = "<group>"; };
+		C2F4DEF428E22573001A0F9E /* Models+MockDriverStanding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Models+MockDriverStanding.swift"; sourceTree = "<group>"; };
+		C2F4DEF528E22573001A0F9E /* Models+MockRaceTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Models+MockRaceTime.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -294,6 +308,7 @@
 		C2A38B9E28DB636B00D8C0F1 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				C2F4DEED28E22510001A0F9E /* Models */,
 				C2A38BF128DB904A00D8C0F1 /* Service */,
 				C2A38B9F28DB636B00D8C0F1 /* Preview Assets.xcassets */,
 			);
@@ -480,6 +495,20 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		C2F4DEED28E22510001A0F9E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C2F4DEF128E22573001A0F9E /* Models+MockCircuit.swift */,
+				C2F4DEEF28E22573001A0F9E /* Models+MockConstructor.swift */,
+				C2F4DEF028E22573001A0F9E /* Models+MockDriver.swift */,
+				C2F4DEF428E22573001A0F9E /* Models+MockDriverStanding.swift */,
+				C2F4DEF228E22573001A0F9E /* Models+MockLocation.swift */,
+				C2F4DEF528E22573001A0F9E /* Models+MockRaceTime.swift */,
+				C2F4DEEE28E22573001A0F9E /* Models+MockSchedule.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -611,6 +640,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2A38C1428DBE09D00D8C0F1 /* Standing+Assembly.swift in Sources */,
+				C2F4DEF728E22573001A0F9E /* Models+MockConstructor.swift in Sources */,
 				C2A38B9B28DB636700D8C0F1 /* HomeView.swift in Sources */,
 				C2A38BE528DB827100D8C0F1 /* ErgastAPI.swift in Sources */,
 				C212FED228DCBDD400CEAA02 /* Models+Models.swift in Sources */,
@@ -621,6 +651,7 @@
 				C2683D2528E0BDD500725F68 /* Calendar.swift in Sources */,
 				C2683D4B28E1323A00725F68 /* RaceDetails+View.swift in Sources */,
 				C2683D3028E0C12100725F68 /* Models+Schedule.swift in Sources */,
+				C2F4DEFA28E22573001A0F9E /* Models+MockLocation.swift in Sources */,
 				C2BE3BC228DD4A160057EFFF /* Color.swift in Sources */,
 				C2683D3B28E10D8100725F68 /* Calendar+ScheduleCard.swift in Sources */,
 				C2A38C1128DBE04F00D8C0F1 /* Standing+View.swift in Sources */,
@@ -646,11 +677,16 @@
 				C2683D4828E1323A00725F68 /* RaceDetails+ViewState.swift in Sources */,
 				C2C4EA8528DD3E4300E9D745 /* Interface+DriverStanding.swift in Sources */,
 				C2A38BC828DB642400D8C0F1 /* Network.swift in Sources */,
+				C2F4DEFD28E22573001A0F9E /* Models+MockRaceTime.swift in Sources */,
 				C2683D2428E0BDD500725F68 /* Calendar+ViewState.swift in Sources */,
 				C2683D3228E0C23300725F68 /* Models+RaceTime.swift in Sources */,
+				C2F4DEF828E22573001A0F9E /* Models+MockDriver.swift in Sources */,
+				C2F4DEF628E22573001A0F9E /* Models+MockSchedule.swift in Sources */,
+				C2F4DEFC28E22573001A0F9E /* Models+MockDriverStanding.swift in Sources */,
 				C2A38C0F28DBE04F00D8C0F1 /* Standing.swift in Sources */,
 				C2A38BF928DB93D100D8C0F1 /* ViewFactory.swift in Sources */,
 				C2BE3BC828DE2BC50057EFFF /* Interface+ConstructorStanding.swift in Sources */,
+				C2F4DEF928E22573001A0F9E /* Models+MockCircuit.swift in Sources */,
 				C2A38C1028DBE04F00D8C0F1 /* Standing+Root.swift in Sources */,
 				C2BE3BCA28DE2BEA0057EFFF /* Interface+Common.swift in Sources */,
 				C2683D3D28E1144400725F68 /* Date.swift in Sources */,

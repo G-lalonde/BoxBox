@@ -38,27 +38,16 @@ extension Standing.View {
                         .minimumScaleFactor(0.01)
                         .frame(width: 40)
 
-//                Circle()
-//                    .fill(
-//                        LinearGradient(
-//                            colors: [Color(hex: "373E45"), Color(hex: "373E45").opacity(0.1)],
-//                            startPoint: .leading,
-//                            endPoint: .trailing
-//                        )
-//                    )
-//                    .frame(width: 50, height: 50, alignment: .center)
-
                     VStack(alignment: .leading, spacing: 5) {
                         Text("\(standing.driver.givenName) \(standing.driver.familyName)")
-                            .font(.body)
+                            .font(.system(.title2, design: .rounded))
                             .bold()
-                            .lineLimit(1)
 
                         Text(standing.constructors.name)
-                            .font(.callout)
+                            .font(.footnote)
                             .bold()
                             .foregroundColor(.white)
-                            .padding(.horizontal)
+                            .padding(.horizontal, 12)
                             .background(standing.constructors.color)
                             .cornerRadius(12)
                     }

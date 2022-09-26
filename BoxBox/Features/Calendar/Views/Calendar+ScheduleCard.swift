@@ -28,13 +28,30 @@ extension Calendar.View {
                 .frame(width: 35)
 
                 VStack(alignment: .leading) {
-                    Text(race.raceName)
-                        .font(.body)
+                    HStack {
+                        Text("Round \(race.round)")
+                            .foregroundColor(.red)
+                            .font(.system(.footnote, design: .rounded))
+
+                        if race.isSprint {
+                            Text("Sprint")
+                                .font(.footnote)
+                                .bold()
+                                .foregroundColor(.white)
+                                .padding(.horizontal, 12)
+                                .background(.red)
+                                .cornerRadius(12)
+                        }
+                    }
+
+                    Text(race.name)
+                        .font(.system(.title2, design: .rounded))
                         .bold()
                         .lineLimit(1)
-                    Text("Round \(race.round) | \(race.circuit.circuitName)")
-                        .font(.footnote)
+                    Text(race.circuit.circuitName)
+                        .foregroundColor(.gray)
                 }
+                .font(.footnote)
                 .padding(.horizontal)
 
                 Spacer()
@@ -50,7 +67,7 @@ extension Calendar.View {
 
 struct Calendar_ScheduleCard_Previews: PreviewProvider {
     static var previews: some View {
-        Calendar.View.ScheduleCard(race: .mock1)
+        Calendar.View.ScheduleCard(race: .mock3)
             .padding()
             .background(.gray)
             .previewLayout(.sizeThatFits)

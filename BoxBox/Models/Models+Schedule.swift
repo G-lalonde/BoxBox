@@ -20,6 +20,14 @@ extension Models {
         let fp3: RaceTime?
         let sprint: RaceTime?
         let quali: RaceTime
+
+        var isSprint: Bool {
+            sprint != nil
+        }
+
+        var name: String {
+            raceName.replacingOccurrences(of: "Grand Prix", with: "GP")
+        }
     }
 }
 

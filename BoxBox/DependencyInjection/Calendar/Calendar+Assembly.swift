@@ -16,7 +16,6 @@ extension ViewFactory.Assembly.ForRuntime {
 
         return Calendar.View.Root(
             viewModel: Calendar.View.ViewModel(
-                network: network,
                 api: api
             ),
             viewFactory: viewFactory
@@ -28,12 +27,10 @@ extension ViewFactory.Assembly.ForPreview {
     @MainActor func makeCalendarView(
         viewFactory: ViewFactory.Factory
     ) -> Calendar.View.Root {
-        let network = Network.shared
-        let api = ErgastMockApi(network: network)
+        let api = ErgastMockApi()
 
         return Calendar.View.Root(
             viewModel: Calendar.View.ViewModel(
-                network: network,
                 api: api
             ),
             viewFactory: viewFactory

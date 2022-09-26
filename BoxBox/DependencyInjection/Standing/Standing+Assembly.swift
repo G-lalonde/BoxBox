@@ -15,10 +15,7 @@ extension ViewFactory.Assembly.ForRuntime {
         let api = ErgastApi(network: network)
 
         return Standing.View.Root(
-            viewModel: Standing.View.ViewModel(
-                network: network,
-                api: api
-            ),
+            viewModel: Standing.View.ViewModel(api: api),
             viewFactory: viewFactory
         )
     }
@@ -28,14 +25,10 @@ extension ViewFactory.Assembly.ForPreview {
     @MainActor func makeStandingView(
         viewFactory: ViewFactory.Factory
     ) -> Standing.View.Root {
-        let network = Network.shared
-        let api = ErgastMockApi(network: network)
+        let api = ErgastMockApi()
 
         return Standing.View.Root(
-            viewModel: Standing.View.ViewModel(
-                network: network,
-                api: api
-            ),
+            viewModel: Standing.View.ViewModel(api: api),
             viewFactory: viewFactory
         )
     }

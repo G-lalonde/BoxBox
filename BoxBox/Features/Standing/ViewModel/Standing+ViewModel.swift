@@ -11,12 +11,10 @@ extension Standing.View {
     final class ViewModel: ObservableObject, Emitable {
         @Published public internal(set) var state: Standing.View.ViewModel.ViewState
 
-        let network: Network
         let api: DriverApi
 
-        init(network: Network, api: DriverApi) {
+        init(api: DriverApi) {
             state = .loading
-            self.network = network
             self.api = api
         }
 

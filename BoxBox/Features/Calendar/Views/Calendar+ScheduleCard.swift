@@ -38,6 +38,7 @@ extension Calendar.View {
                 .padding(.horizontal)
 
                 Spacer()
+                Image(systemName: "chevron.forward")
             }
             .padding(.horizontal)
             .padding(.vertical, 8)

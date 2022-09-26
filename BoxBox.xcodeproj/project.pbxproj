@@ -24,6 +24,12 @@
 		C2683D3928E10C4600725F68 /* Emitable.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2683D3828E10C4600725F68 /* Emitable.swift */; };
 		C2683D3B28E10D8100725F68 /* Calendar+ScheduleCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2683D3A28E10D8100725F68 /* Calendar+ScheduleCard.swift */; };
 		C2683D3D28E1144400725F68 /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2683D3C28E1144400725F68 /* Date.swift */; };
+		C2683D4828E1323A00725F68 /* RaceDetails+ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2683D4028E1323A00725F68 /* RaceDetails+ViewState.swift */; };
+		C2683D4928E1323A00725F68 /* RaceDetails+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2683D4128E1323A00725F68 /* RaceDetails+ViewModel.swift */; };
+		C2683D4A28E1323A00725F68 /* RaceDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2683D4328E1323A00725F68 /* RaceDetails.swift */; };
+		C2683D4B28E1323A00725F68 /* RaceDetails+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2683D4528E1323A00725F68 /* RaceDetails+View.swift */; };
+		C2683D4C28E1323A00725F68 /* RaceDetails+Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2683D4628E1323A00725F68 /* RaceDetails+Root.swift */; };
+		C2683D5028E1329200725F68 /* RaceDetails+Assembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2683D4F28E1329200725F68 /* RaceDetails+Assembly.swift */; };
 		C2A38B9928DB636700D8C0F1 /* BoxBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38B9828DB636700D8C0F1 /* BoxBoxApp.swift */; };
 		C2A38B9B28DB636700D8C0F1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A38B9A28DB636700D8C0F1 /* HomeView.swift */; };
 		C2A38B9D28DB636B00D8C0F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2A38B9C28DB636B00D8C0F1 /* Assets.xcassets */; };
@@ -88,6 +94,12 @@
 		C2683D3828E10C4600725F68 /* Emitable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emitable.swift; sourceTree = "<group>"; };
 		C2683D3A28E10D8100725F68 /* Calendar+ScheduleCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Calendar+ScheduleCard.swift"; sourceTree = "<group>"; };
 		C2683D3C28E1144400725F68 /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		C2683D4028E1323A00725F68 /* RaceDetails+ViewState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RaceDetails+ViewState.swift"; sourceTree = "<group>"; };
+		C2683D4128E1323A00725F68 /* RaceDetails+ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RaceDetails+ViewModel.swift"; sourceTree = "<group>"; };
+		C2683D4328E1323A00725F68 /* RaceDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RaceDetails.swift; sourceTree = "<group>"; };
+		C2683D4528E1323A00725F68 /* RaceDetails+View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RaceDetails+View.swift"; sourceTree = "<group>"; };
+		C2683D4628E1323A00725F68 /* RaceDetails+Root.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RaceDetails+Root.swift"; sourceTree = "<group>"; };
+		C2683D4F28E1329200725F68 /* RaceDetails+Assembly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RaceDetails+Assembly.swift"; sourceTree = "<group>"; };
 		C2A38B9528DB636700D8C0F1 /* BoxBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoxBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2A38B9828DB636700D8C0F1 /* BoxBoxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxBoxApp.swift; sourceTree = "<group>"; };
 		C2A38B9A28DB636700D8C0F1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -198,6 +210,50 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		C2683D3E28E1323A00725F68 /* RaceDetails */ = {
+			isa = PBXGroup;
+			children = (
+				C2683D3F28E1323A00725F68 /* ViewModel */,
+				C2683D4228E1323A00725F68 /* Common */,
+				C2683D4428E1323A00725F68 /* Views */,
+			);
+			path = RaceDetails;
+			sourceTree = "<group>";
+		};
+		C2683D3F28E1323A00725F68 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C2683D4028E1323A00725F68 /* RaceDetails+ViewState.swift */,
+				C2683D4128E1323A00725F68 /* RaceDetails+ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C2683D4228E1323A00725F68 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C2683D4328E1323A00725F68 /* RaceDetails.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C2683D4428E1323A00725F68 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C2683D4528E1323A00725F68 /* RaceDetails+View.swift */,
+				C2683D4628E1323A00725F68 /* RaceDetails+Root.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C2683D4E28E1329200725F68 /* RaceDetails */ = {
+			isa = PBXGroup;
+			children = (
+				C2683D4F28E1329200725F68 /* RaceDetails+Assembly.swift */,
+			);
+			path = RaceDetails;
+			sourceTree = "<group>";
+		};
 		C2A38B8C28DB636700D8C0F1 = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +330,7 @@
 			isa = PBXGroup;
 			children = (
 				C2683D1828E0BDD500725F68 /* Calendar */,
+				C2683D3E28E1323A00725F68 /* RaceDetails */,
 				C2A38C0428DBE04F00D8C0F1 /* Standing */,
 			);
 			path = Features;
@@ -300,6 +357,7 @@
 				C2A38BF828DB93D100D8C0F1 /* ViewFactory.swift */,
 				C2683D1628E0BA1D00725F68 /* Common+ViewFactory.swift */,
 				C2683D2A28E0BEE900725F68 /* Calendar */,
+				C2683D4E28E1329200725F68 /* RaceDetails */,
 				C2A38C1228DBE09D00D8C0F1 /* Standing */,
 			);
 			path = DependencyInjection;
@@ -559,16 +617,20 @@
 				C2683D2C28E0BEFE00725F68 /* Calendar+Assembly.swift in Sources */,
 				C2A38C0E28DBE04F00D8C0F1 /* Standing+ViewModel.swift in Sources */,
 				C2683D2E28E0C07400725F68 /* Interface+CurrentSchedule.swift in Sources */,
+				C2683D5028E1329200725F68 /* RaceDetails+Assembly.swift in Sources */,
 				C2683D2528E0BDD500725F68 /* Calendar.swift in Sources */,
+				C2683D4B28E1323A00725F68 /* RaceDetails+View.swift in Sources */,
 				C2683D3028E0C12100725F68 /* Models+Schedule.swift in Sources */,
 				C2BE3BC228DD4A160057EFFF /* Color.swift in Sources */,
 				C2683D3B28E10D8100725F68 /* Calendar+ScheduleCard.swift in Sources */,
 				C2A38C1128DBE04F00D8C0F1 /* Standing+View.swift in Sources */,
 				C2A38BF428DB906D00D8C0F1 /* ErgastMockAPI.swift in Sources */,
+				C2683D4A28E1323A00725F68 /* RaceDetails.swift in Sources */,
 				C2683D1728E0BA1D00725F68 /* Common+ViewFactory.swift in Sources */,
 				C2A38B9928DB636700D8C0F1 /* BoxBoxApp.swift in Sources */,
 				C2683D2928E0BDD500725F68 /* Calendar+View.swift in Sources */,
 				C2683D3428E0C24400725F68 /* Models+Location.swift in Sources */,
+				C2683D4C28E1323A00725F68 /* RaceDetails+Root.swift in Sources */,
 				C2683D2328E0BDD500725F68 /* Calendar+ViewModel.swift in Sources */,
 				C2A38BED28DB841F00D8C0F1 /* Models+Driver.swift in Sources */,
 				C2683D2728E0BDD500725F68 /* Calendar+Root.swift in Sources */,
@@ -579,7 +641,9 @@
 				C2BE3BC428DE11590057EFFF /* Standing+DriverStandingCard.swift in Sources */,
 				C2A38BF028DB863000D8C0F1 /* ErgastUrls.swift in Sources */,
 				C2BE3BC628DE2B300057EFFF /* Standing+ConstructorStandingCard.swift in Sources */,
+				C2683D4928E1323A00725F68 /* RaceDetails+ViewModel.swift in Sources */,
 				C212FEC228DCBA9000CEAA02 /* Models+Constructor.swift in Sources */,
+				C2683D4828E1323A00725F68 /* RaceDetails+ViewState.swift in Sources */,
 				C2C4EA8528DD3E4300E9D745 /* Interface+DriverStanding.swift in Sources */,
 				C2A38BC828DB642400D8C0F1 /* Network.swift in Sources */,
 				C2683D2428E0BDD500725F68 /* Calendar+ViewState.swift in Sources */,

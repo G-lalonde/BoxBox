@@ -45,7 +45,12 @@ extension Calendar.View {
 
         func loadedView(calendar: [Models.Schedule]) -> some View {
             ForEach(calendar, id: \.self) { race in
-                ScheduleCard(race: race)
+                NavigationLink {
+                    viewFactory.makeView(id: .raceDetails(race))
+                } label: {
+                    ScheduleCard(race: race)
+                }
+                .buttonStyle(PlainButtonStyle())
             }
         }
     }

@@ -11,12 +11,15 @@ struct ViewFactory {
     enum ViewId {
         case standing
         case calendar
+        case raceDetails(Models.Schedule)
     }
 }
 
 protocol ViewFactoryAssembly {
     func makeStandingView(viewFactory: ViewFactory.Factory) -> Standing.View.Root
     func makeCalendarView(viewFactory: ViewFactory.Factory) -> Calendar.View.Root
+    func makeRaceDetailsView(viewFactory: ViewFactory.Factory, raceDetails: Models.Schedule)
+        -> RaceDetails.View.Root
 }
 
 extension ViewFactory {
@@ -30,6 +33,8 @@ extension ViewFactory {
                     assembly.makeStandingView(viewFactory: self)
                 case .calendar:
                     assembly.makeCalendarView(viewFactory: self)
+                case let .raceDetails(raceDetails):
+                    assembly.makeRaceDetailsView(viewFactory: self, raceDetails: raceDetails)
             }
         }
     }

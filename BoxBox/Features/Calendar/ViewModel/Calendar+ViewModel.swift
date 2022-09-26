@@ -11,21 +11,19 @@ extension Calendar.View {
     final class ViewModel: ObservableObject, Emitable {
         @Published public internal(set) var state: Calendar.View.ViewModel.ViewState
 
-        let network: Network
         let api: DriverApi
 
-        init(network: Network, api: DriverApi) {
+        init(api: DriverApi) {
             state = .loading
-            self.network = network
             self.api = api
         }
 
         func fetchCalendar() async {
-            emit(state: .loading)
+            emit(state: .loading, withAnimation: false)
 
             do {
                 let schedules = try await api.getCurrentSchedule()
-                emit(state: .loaded(schedules))
+                emit(state: .loaded(schedules), withAnimation: false)
             } catch {
                 emit(state: .error)
             }

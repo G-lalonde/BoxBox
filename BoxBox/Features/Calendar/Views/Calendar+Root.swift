@@ -48,7 +48,7 @@ extension Calendar.View {
                 NavigationLink {
                     viewFactory.makeView(id: .raceDetails(race))
                 } label: {
-                    ScheduleCard(race: race)
+                    Calendar.View.ScheduleCard(race: race)
                 }
                 .buttonStyle(PlainButtonStyle())
             }

@@ -9,7 +9,7 @@ import SwiftUI
 
 @main
 struct BoxBoxApp: App {
-    let viewFactory = ViewFactory.Factory(assembly: Assemblies.forPreview)
+    let viewFactory = ViewFactory.Factory(assembly: Assemblies.forRuntime)
 
     var body: some Scene {
         WindowGroup {

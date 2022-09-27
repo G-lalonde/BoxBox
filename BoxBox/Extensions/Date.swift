@@ -22,29 +22,29 @@ extension Date {
 extension Date {
     static func monthShortDescription(_ index: Int?) -> String {
         switch index {
-            case 0:
-                return "JAN"
             case 1:
-                return "FEB"
+                return "JAN"
             case 2:
-                return "MAR"
+                return "FEB"
             case 3:
-                return "APR"
+                return "MAR"
             case 4:
-                return "MAY"
+                return "APR"
             case 5:
-                return "JUN"
+                return "MAY"
             case 6:
-                return "JUL"
+                return "JUN"
             case 7:
-                return "AUG"
+                return "JUL"
             case 8:
-                return "SEP"
+                return "AUG"
             case 9:
-                return "OCT"
+                return "SEP"
             case 10:
+                return "OCT"
+            case 12:
                 return "NOV"
-            case 11:
+            case 13:
                 return "DEC"
             default:
                 return "JAN"

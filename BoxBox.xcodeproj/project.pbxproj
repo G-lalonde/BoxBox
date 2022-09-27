@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C20A622F28E3448B002986E3 /* RaceDetails+SessionSchedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20A622E28E3448B002986E3 /* RaceDetails+SessionSchedule.swift */; };
 		C212FEC228DCBA9000CEAA02 /* Models+Constructor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C212FEC128DCBA9000CEAA02 /* Models+Constructor.swift */; };
 		C212FED228DCBDD400CEAA02 /* Models+Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C212FED128DCBDD400CEAA02 /* Models+Models.swift */; };
 		C2683D1728E0BA1D00725F68 /* Common+ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2683D1628E0BA1D00725F68 /* Common+ViewFactory.swift */; };
@@ -84,6 +85,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C20A622E28E3448B002986E3 /* RaceDetails+SessionSchedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RaceDetails+SessionSchedule.swift"; sourceTree = "<group>"; };
 		C212FEC128DCBA9000CEAA02 /* Models+Constructor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models+Constructor.swift"; sourceTree = "<group>"; };
 		C212FED128DCBDD400CEAA02 /* Models+Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models+Models.swift"; sourceTree = "<group>"; };
 		C2683D1628E0BA1D00725F68 /* Common+ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Common+ViewFactory.swift"; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 			children = (
 				C2683D4528E1323A00725F68 /* RaceDetails+View.swift */,
 				C2683D4628E1323A00725F68 /* RaceDetails+Root.swift */,
+				C20A622E28E3448B002986E3 /* RaceDetails+SessionSchedule.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -662,6 +665,7 @@
 				C2683D2928E0BDD500725F68 /* Calendar+View.swift in Sources */,
 				C2683D3428E0C24400725F68 /* Models+Location.swift in Sources */,
 				C2683D4C28E1323A00725F68 /* RaceDetails+Root.swift in Sources */,
+				C20A622F28E3448B002986E3 /* RaceDetails+SessionSchedule.swift in Sources */,
 				C2683D2328E0BDD500725F68 /* Calendar+ViewModel.swift in Sources */,
 				C2A38BED28DB841F00D8C0F1 /* Models+Driver.swift in Sources */,
 				C2683D2728E0BDD500725F68 /* Calendar+Root.swift in Sources */,

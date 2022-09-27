@@ -1,24 +1,26 @@
 //
-//  Calendar+ScheduleCard.swift
+//  RaceDetails+SessionSchedule.swift
 //  BoxBox
 //
-//  Created by Jérémy Lalonde on 2022-09-25.
+//  Created by Jérémy Lalonde on 2022-09-27.
 //
 
 import SwiftUI
 
-extension Calendar.View {
-    struct ScheduleCard: View {
+extension RaceDetails.View {
+    struct SessionSchedule: View {
         let race: Models.Schedule
+        let time: Models.RaceTime
+        let sessionType: SessionType
 
         var body: some View {
             HStack {
                 VStack {
-                    Text(race.raceTime.day)
+                    Text(time.day)
                         .font(.title2)
                         .italic()
                         .bold()
-                    Text(race.raceTime.month)
+                    Text(time.month)
                         .font(.callout)
                         .italic()
                         .bold()
@@ -28,29 +30,14 @@ extension Calendar.View {
                 .frame(width: 40)
 
                 VStack(alignment: .leading) {
-                    HStack {
-                        Text("Round \(race.round)")
-                            .foregroundColor(.red)
-                            .font(.system(.footnote, design: .rounded))
-
-                        if race.isSprint {
-                            Text("Sprint")
-                                .font(.footnote)
-                                .bold()
-                                .foregroundColor(.white)
-                                .padding(.horizontal, 12)
-                                .background(
-                                    Capsule()
-                                        .fill(.red)
-                                )
-                        }
-                    }
-
-                    Text(race.name)
+                    Text(sessionType.rawValue)
                         .font(.system(.title2, design: .rounded))
                         .bold()
                         .lineLimit(1)
-                    Text(race.circuit.circuitName)
+
+                    Text(time.dateUTC?
+                        .formatted(date: .omitted, time: .shortened)
+                        ?? "")
                         .foregroundColor(.gray)
                 }
                 .font(.footnote)
@@ -67,9 +54,9 @@ extension Calendar.View {
     }
 }
 
-struct Calendar_ScheduleCard_Previews: PreviewProvider {
+struct RaceDetails_SessionSchedule_Previews: PreviewProvider {
     static var previews: some View {
-        Calendar.View.ScheduleCard(race: .mock3)
+        RaceDetails.View.SessionSchedule(race: .mock3, time: .mock3, sessionType: .fp1)
             .padding()
             .background(.gray)
             .previewLayout(.sizeThatFits)

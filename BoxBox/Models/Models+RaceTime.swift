@@ -26,7 +26,13 @@ extension Models {
             formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
             let localDate = formatter.date(from: utc)
 
-            return localDate?.get(.day, .month, .year)
+            return localDate?.get(.day, .month, .year, .hour, .minute)
+        }
+
+        var dateUTC: Date? {
+            let formatter = DateFormatter()
+            formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+            return formatter.date(from: utc)
         }
 
         var day: String {
@@ -45,6 +51,13 @@ extension Models {
                 return String(year)
             }
             return "1970"
+        }
+
+        var timeFormatted: String {
+            if let hour = dateComponents?.hour, let minute = dateComponents?.minute {
+                return String("\(hour):\(minute)")
+            }
+            return "00:00"
         }
     }
 }
